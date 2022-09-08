@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Microblog from "../components/Microblog";
 
 export default function Home() {
-  return (
+  return (<>
     <section className="container px-6 mx-auto h-screen border border-4 flex flex-col justify-center items-center" id="landingPage">
       <table className="table table-auto border">
         <tbody>
@@ -13,7 +13,7 @@ export default function Home() {
           </tr>
           <tr id="subTitle-row">
             <td className="pb-5 text-center text-white">
-              <p className=" text-white">web developer | digital marketer </p>
+              <p className="text-white">web developer | digital marketer </p>
             </td>
           </tr>
           <tr id="microBlog-row">
@@ -23,7 +23,15 @@ export default function Home() {
           </tr>
         </tbody>
       </table>
-      
     </section>
-  )
+    <WebDev/>
+  </>)
+}
+
+const WebDev = ()=>{
+  return(<>
+    <section className="container px-6 mx-auto h-screen border border-4 flex flex-col justify-center items-center" id="webDev">
+      <div className="cart">hello</div>
+    </section>
+  </>)
 }

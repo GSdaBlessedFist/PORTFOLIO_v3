@@ -11,7 +11,7 @@ export default function Layout({children}){
 		          	<Link href="#" className="active" id="topNavBarMenu-home">
 		          		<a className=" p-2 h-full flex items-center b">Home</a>
 		          	</Link>
-		          	<Link href="#" className="" id="topNavBarMenu-webDev">
+		          	<Link href="#webDev" className="" id="topNavBarMenu-webDev">
 		         		<a className=" p-2 h-full flex items-center b">Development</a>
 		         	</Link> 	
 		         	<Link href="#" className="" id="topNavBarMenu-emailDev">
