@@ -1,13 +1,16 @@
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import Image from 'next/image';
-import Microblog from "../components/Microblog";
-import projectPieces from "../components/projectInfo"
-
-
+import projectPieces from "../components/projectInfo";
+import {microblog_entries} from "../components/microblog-entries";
 
 export default function Home() {
 
   const [projects,setProjects] = useState(projectPieces);
+  const [microblogPhrase,setMicroblogPhrase]= useState('Idea of the day');
+
+  useEffect(()=>{
+    setMicroblogPhrase(microblog_entries[Math.floor(Math.random()*microblog_entries.length)].message)
+  },[])
 
   return (<>
     <section className="container px-6 mx-auto h-screen border border-4 flex flex-col justify-center items-center" id="landingPage">
@@ -25,7 +28,7 @@ export default function Home() {
           </tr>
           <tr id="microBlog-row">
             <td className="py-2 text-center border border-3">
-              <Microblog/>
+              <p>{microblogPhrase}</p>
             </td>
           </tr>
         </tbody>
@@ -56,3 +59,4 @@ const WebDevSection = ({projects})=>{
     </section>
   </>)
 }
+

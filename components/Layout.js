@@ -5,17 +5,17 @@ export default function Layout({children}){
 	return (<>
 		    <div className="container mx-auto w-screen md:container md:mx-auto sticky top-0 b" id="topNavBar">
 		      <div className=" flex justify-between" id="topNavarInner">
-		        <a className=" p-4 b" href="#">LOGO</a>
+		        <a className="bg-[#223] p-4 b" href="#">LOGO</a>
 		        <div className="flex " id="topNavBarMenuGroup">
 		          
 		          	<Link href="#" className="active" id="topNavBarMenu-home">
-		          		<a className=" p-2 h-full flex items-center  b">Home</a>
+		          		<a className="bg-[#223] hover:bg-[#334] p-2 h-full flex items-center  b">Home</a>
 		          	</Link>
 		          	<Link href="#webDevSection" className="" id="topNavBarMenu-webDevSection">
-		         		<a className=" p-2 h-full flex items-center  b">Development</a>
+		         		<a className="bg-[#223] p-2 h-full flex items-center  b">Development</a>
 		         	</Link> 	
 		         	<Link href="#emailDevSection" className="" id="topNavBarMenu-emailDevSection">
-		         		<a className=" p-2 h-full flex items-center b">Marketing</a>
+		         		<a className="bg-[#223] p-2 h-full flex items-center b">Marketing</a>
 		         	</Link>
 		        </div>
 		      </div>
