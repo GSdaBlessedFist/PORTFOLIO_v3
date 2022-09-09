@@ -1,7 +1,14 @@
+import {useState} from "react";
 import Image from 'next/image';
 import Microblog from "../components/Microblog";
+import projectPieces from "../components/projectInfo"
+
+
 
 export default function Home() {
+
+  const [projects,setProjects] = useState(projectPieces);
+
   return (<>
     <section className="container px-6 mx-auto h-screen border border-4 flex flex-col justify-center items-center" id="landingPage">
       <table className="table table-auto border">
@@ -24,14 +31,28 @@ export default function Home() {
         </tbody>
       </table>
     </section>
-    <WebDev/>
+
+    <WebDevSection projects={projects}/>
   </>)
 }
 
-const WebDev = ()=>{
+const WebDevSection = ({projects})=>{
   return(<>
-    <section className="container px-6 mx-auto h-screen border border-4 flex flex-col justify-center items-center" id="webDev">
-      <div className="cart">hello</div>
+    <section className="container  mx-auto h-screen border border-4 flex flex-col " id="webDevSection">
+      <table className="relative top-14 table table-fixed b">
+        <tbody>
+          <tr id="webDev-title-row">
+            <td className="pl-6 pt-4 text-2xl text-white/75">
+              web development<br/>
+              <span className="pl-8 relative top-[-1rem] text-6xl ">Projects</span>
+            </td>
+          </tr>
+          <tr id="webDev-items-row">
+
+          </tr>
+          
+        </tbody>
+      </table>
     </section>
   </>)
 }

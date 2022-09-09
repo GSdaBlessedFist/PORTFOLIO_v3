@@ -6,6 +6,9 @@
   .b {
     @apply border border-white;
   }
+  .o {
+    @apply border border-orange-60;
+  }
 }
  html {
   scroll-behavior: smooth;

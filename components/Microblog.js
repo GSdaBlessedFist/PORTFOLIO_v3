@@ -1,11 +1,11 @@
 import {microblog_entries} from "./microblog-entries";
 
 export const getStaticProps = ()=>{
-	return{
-		props: {
-			message: microblog_entries
-		}
-	}
+    return{
+      props: {
+        message: microblog_entries
+             }
+      }
 }
 
 export default function Microblog({message}){
