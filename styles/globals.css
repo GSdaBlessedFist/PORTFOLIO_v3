@@ -7,9 +7,16 @@
     @apply border border-white;
   }
   .o {
-    @apply border border-orange-60;
+    @apply border border-4 border-orange-300;
+  }
+  .button {
+    @apply bg-[#223] hover:bg-[#334];
+  }
+  .spacer{
+    @apply w-[5px] h-[20px] bg-[#112]/50;
   }
 }
+
  html {
   scroll-behavior: smooth;
 }
