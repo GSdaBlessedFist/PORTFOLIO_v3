@@ -21,6 +21,8 @@
   scroll-behavior: smooth;
 }
 body{
+  display:flex;
+  flex-direction:column;
 	background: #223;
   color: white;
 }
