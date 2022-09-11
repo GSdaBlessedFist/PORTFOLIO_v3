@@ -1,4 +1,4 @@
-import {useState,useEffect} from "react";
+import React,{useState,useEffect} from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
@@ -65,8 +65,8 @@ const WebDevSection = ({projects})=>{
             {projects.map((project,index)=>{
               return (<>
                 <td className="shrink-0 p-2 button" key={index}>
-                  <Link href={`#${project.id}`} key={index}>
-                    <a className=" h-full" id={`${project.id}-link`}>
+                  <Link href={`#${project.id}`} key={`${project.name}-link`}>
+                    <a className=" h-full" id={`${project.id}-link`} key={`${project.name}-anchor`}>
                       {project.name}
                     </a>
                   </Link>
@@ -75,10 +75,10 @@ const WebDevSection = ({projects})=>{
             })}
           </tr>
           <tr id="webDev-items-row" className="flex flex-col pt-4 b">
-            {projects.map((project)=>{
+            {projects.map((project,index)=>{
               return (<>
-                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 b" key={`${project.id}-container`}>
-                  <div id={`${project.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_18%_12%] h-42 b">
+                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 b" key={project.id}>
+                  <div id={`${project.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_18%_auto] h-[250px] b">
                     <div id={`${project.id}-screenshot`} className="col-span-1 row-span-2 m-auto b">insert image</div>
                     <div id={`${project.id}-info`} className="p-4 pt-1  b">
                       <h1 id={`${project.id}-title`} className="text-center py-1 font-bold ">{project.name}</h1>
@@ -87,7 +87,7 @@ const WebDevSection = ({projects})=>{
                     <div id={`${project.id}-techStack`} className="text-xs flex items-center justify-center p-2 text-center b">
                       {project.techStack}
                     </div>
-                    <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly p-2 b">
+                    <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly  b">
                       <Link href={project.url} className="">
                         <a id={`${project.id}-url`} className="font-bold button px-4" target="_blank">live site</a>
                       </Link>
@@ -124,8 +124,8 @@ const EmailDevSection = ({emailDevProjects})=>{
             {emailDevProjects.map((emailDevProject)=>{
               return (<>
                 <td className="shrink-0 p-2 button" key={`${emailDevProject.id}-container`}>
-                  <Link href={`#${emailDevProject.id}`}>
-                    <a className=" h-full" id={`${emailDevProject.id}-link`}>
+                  <Link href={`#${emailDevProject.id}`} key={`${emailDevProject.name}-link`}>
+                    <a className=" h-full" id={`${emailDevProject.id}-link`} key={`${emailDevProject.name}-anchor`}>
                       {emailDevProject.name}
                     </a>
                   </Link>
@@ -137,7 +137,7 @@ const EmailDevSection = ({emailDevProjects})=>{
             {emailDevProjects.map((emailDevProject)=>{
               return (<>
                 <td id={`${emailDevProject.id}`} className="w-11/12 mx-auto my-1 b" key={`${emailDevProject.id}-container`}>
-                  <div id={`${emailDevProject.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_18%_12%] h-42 b">
+                  <div id={`${emailDevProject.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_18%_auto] h-[250px] b">
                     <div id={`${emailDevProject.id}-screenshot`} className="col-span-1 row-span-2 m-auto b">insert image</div>
                     <div id={`${emailDevProject.id}-info`} className="p-4 pt-1  b">
                       <h1 id={`${emailDevProject.id}-title`} className="text-center py-1 font-bold ">{emailDevProject.name}</h1>
@@ -146,7 +146,7 @@ const EmailDevSection = ({emailDevProjects})=>{
                     <div id={`${emailDevProject.id}-techStack`} className="text-xs flex items-center justify-center p-2 text-center b">
                       {emailDevProject.techStack}
                     </div>
-                    <div id={`${emailDevProject.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly p-2 b">
+                    <div id={`${emailDevProject.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly  b">
                       <Link href={emailDevProject.url} className="">
                         <a id={`${emailDevProject.id}-url`} className="font-bold button px-4" target="_blank">live site</a>
                       </Link>
