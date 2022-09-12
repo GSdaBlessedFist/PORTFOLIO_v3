@@ -1,4 +1,4 @@
-const digitalMarketingProjectInfo = [
+const emailDevProjectInfo = [
 	{
 		id: "second-opinion-landing",
 		name: "Second Opinion",
@@ -11,4 +11,4 @@ const digitalMarketingProjectInfo = [
 	}
 ];	
 
-export default digitalMarketingProjectInfo;
+export default emailDevProjectInfo;

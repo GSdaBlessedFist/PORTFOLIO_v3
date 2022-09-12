@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import {useState,useEffect} from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
@@ -55,28 +55,39 @@ const WebDevSection = ({projects})=>{
     <section className="container mx-auto  border border-lime-400 border-4 flex flex-col " id="web-development">
       <table className=" table table-auto b">
         <tbody>
-          <tr id="webDev-title-row">
-            <td className="pl-6 pt-4 text-2xl text-white/75">
-              web development<br/>
-              <span className="pl-8 relative top-[-1rem] text-6xl ">Projects</span>
-            </td>
+          <tr id="webDev-title-row" className="">
+            <td className="pt-4 text-2xl text-white/75 " >
+              <span className="pl-6">web development</span><br/>
+              <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
+              <ul id="webDevNavMenu" className="border-b-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+                <Link href="#email-development">
+                  <a><li className="text-base p-2 text-right button">Email Development</li></a>
+                </Link>
+                <Link href="#graphic-art">
+                  <a><li className="text-base p-2 text-right button">Graphic Art</li></a>
+                </Link> 
+                <Link href="#about-me">
+                  <a><li className="text-base p-2 text-right button">About me</li></a>
+                </Link>
+              </ul>
+            </td>           
           </tr>
-          <tr id="webDev-links-row" className="flex flex-wrap justify-evenly">
+          <tr id="webDev-links-row" className="col-span-2 flex flex-wrap justify-evenly">
             {projects.map((project,index)=>{
-              return (<>
-                <td className="shrink-0 p-2 button" key={index}>
+              return (
+                <td className="shrink-0 p-2 button" key={project.id}>
                   <Link href={`#${project.id}`} key={`${project.name}-link`}>
                     <a className=" h-full" id={`${project.id}-link`} key={`${project.name}-anchor`}>
                       {project.name}
                     </a>
                   </Link>
                 </td>
-              </>)
+              )
             })}
           </tr>
           <tr id="webDev-items-row" className="flex flex-col pt-4 b">
             {projects.map((project,index)=>{
-              return (<>
+              return (
                 <td id={`${project.id}`} className="w-11/12 mx-auto my-1 b" key={project.id}>
                   <div id={`${project.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_18%_auto] h-[250px] b">
                     <div id={`${project.id}-screenshot`} className="col-span-1 row-span-2 m-auto b">insert image</div>
@@ -98,7 +109,7 @@ const WebDevSection = ({projects})=>{
                     </div>
                   </div>
                 </td>
-              </>)
+              )
             })}
           </tr>
         </tbody>
@@ -114,15 +125,26 @@ const EmailDevSection = ({emailDevProjects})=>{
     <section className="container  mx-auto h-screen border border-4 flex flex-col " id="email-development">
       <table className="table table-auto o">
         <tbody>
-          <tr id="emailDev-title-row">
-            <td className="pl-6 pt-6 text-2xl text-white/75">
-              Email Development<br/>
-              <span className="pl-8 relative top-[-1rem] text-6xl ">Projects</span>
+          <tr id="emailDev-title-row" className="">
+            <td className=" pt-6 text-2xl text-white/75">
+              <span className="pl-6">Email Development</span><br/>
+              <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
+              <ul id="emailDevNavMenu" className="border-b-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+                <Link href="#web-development">
+                  <a><li className="text-base p-2 text-right button">Web Development</li></a>
+                </Link>
+                <Link href="#graphic-art">
+                  <a><li className="text-base p-2 text-right button">Graphic Art</li></a>
+                </Link> 
+                <Link href="#about-me">
+                  <a><li className="text-base p-2 text-right button">About me</li></a>
+                </Link>
+              </ul>
             </td>
           </tr>
           <tr id="emailDev-links-row" className="flex flex-wrap justify-evenly">
             {emailDevProjects.map((emailDevProject)=>{
-              return (<>
+              return (
                 <td className="shrink-0 p-2 button" key={`${emailDevProject.id}-container`}>
                   <Link href={`#${emailDevProject.id}`} key={`${emailDevProject.name}-link`}>
                     <a className=" h-full" id={`${emailDevProject.id}-link`} key={`${emailDevProject.name}-anchor`}>
@@ -130,12 +152,12 @@ const EmailDevSection = ({emailDevProjects})=>{
                     </a>
                   </Link>
                 </td>
-              </>)
+              )
             })}
           </tr>
           <tr id="emailDev-items-row" className="flex flex-col pt-4 b">
             {emailDevProjects.map((emailDevProject)=>{
-              return (<>
+              return (
                 <td id={`${emailDevProject.id}`} className="w-11/12 mx-auto my-1 b" key={`${emailDevProject.id}-container`}>
                   <div id={`${emailDevProject.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_18%_auto] h-[250px] b">
                     <div id={`${emailDevProject.id}-screenshot`} className="col-span-1 row-span-2 m-auto b">insert image</div>
@@ -157,7 +179,7 @@ const EmailDevSection = ({emailDevProjects})=>{
                     </div>
                   </div>
                 </td>
-              </>)
+              )
             })}
           </tr>
         </tbody>
@@ -165,3 +187,4 @@ const EmailDevSection = ({emailDevProjects})=>{
     </section>
   </>)
 }
+
