@@ -2,16 +2,20 @@ import {useState,useEffect} from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
+import {microblog_entries} from "../data/microblog-entries";
 import projectPieces from "../data/projectInfo";
 import emailDevProjectPieces from "../data/emailDevProjectInfo";
-import {microblog_entries} from "../data/microblog-entries";
+import graphicArtPieces from "../data/graphicArtInfo";
+import {personalText,professionalText,picture,techUsed} from "../data/aboutMeInfo";
+
 
 
 export default function Home() {
 
+  const [microblogPhrase,setMicroblogPhrase]= useState('Idea of the day');
   const [projects,setProjects] = useState(projectPieces);
   const [emailDevProjects,setemailDevProjects] = useState(emailDevProjectPieces);
-  const [microblogPhrase,setMicroblogPhrase]= useState('Idea of the day');
+  const [graphicArt,setGraphicArt] = useState(graphicArtPieces);  
 
   useEffect(()=>{
     setMicroblogPhrase(microblog_entries[Math.floor(Math.random()*microblog_entries.length)].message)
@@ -47,19 +51,21 @@ export default function Home() {
 
     <WebDevSection projects={projects}/>
     <EmailDevSection emailDevProjects={emailDevProjects}/>
+    <GraphicArtSection graphicArt={graphicArt}/>
+    <AboutMeSection/>
   </>)
 }
 
 const WebDevSection = ({projects})=>{
   return(<>
-    <section className="container mx-auto  border border-lime-400 border-4 flex flex-col " id="web-development">
+    <section className="container mx-auto h-fit border  border-4 flex flex-col " id="web-development">
       <table className=" table table-auto b">
         <tbody>
           <tr id="webDev-title-row" className="">
             <td className="pt-4 text-2xl text-white/75 " >
               <span className="pl-6">web development</span><br/>
               <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
-              <ul id="webDevNavMenu" className="border-b-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+              <ul id="webDevNavMenu" className="p-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
                 <Link href="#email-development">
                   <a><li className="text-base p-2 text-right button">Email Development</li></a>
                 </Link>
@@ -72,7 +78,7 @@ const WebDevSection = ({projects})=>{
               </ul>
             </td>           
           </tr>
-          <tr id="webDev-links-row" className="col-span-2 flex flex-wrap justify-evenly">
+          <tr id="webDev-links-row" className="border-t-2 col-span-2 flex flex-wrap justify-evenly">
             {projects.map((project,index)=>{
               return (
                 <td className="shrink-0 p-2 button" key={project.id}>
@@ -122,14 +128,14 @@ const WebDevSection = ({projects})=>{
 const EmailDevSection = ({emailDevProjects})=>{
 
   return (<>
-    <section className="container  mx-auto h-screen border border-4 flex flex-col " id="email-development">
-      <table className="table table-auto o">
+    <section className="container  mx-auto h-fit border border-4 flex flex-col " id="email-development">
+      <table className="table table-auto">
         <tbody>
           <tr id="emailDev-title-row" className="">
             <td className=" pt-6 text-2xl text-white/75">
               <span className="pl-6">Email Development</span><br/>
               <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
-              <ul id="emailDevNavMenu" className="border-b-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+              <ul id="emailDevNavMenu" className="p-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
                 <Link href="#web-development">
                   <a><li className="text-base p-2 text-right button">Web Development</li></a>
                 </Link>
@@ -142,7 +148,7 @@ const EmailDevSection = ({emailDevProjects})=>{
               </ul>
             </td>
           </tr>
-          <tr id="emailDev-links-row" className="flex flex-wrap justify-evenly">
+          <tr id="emailDev-links-row" className="border-t-2 flex flex-wrap justify-evenly">
             {emailDevProjects.map((emailDevProject)=>{
               return (
                 <td className="shrink-0 p-2 button" key={`${emailDevProject.id}-container`}>
@@ -155,7 +161,7 @@ const EmailDevSection = ({emailDevProjects})=>{
               )
             })}
           </tr>
-          <tr id="emailDev-items-row" className="flex flex-col pt-4 b">
+          <tr id="emailDev-items-row" className=" flex flex-col pt-4 b">
             {emailDevProjects.map((emailDevProject)=>{
               return (
                 <td id={`${emailDevProject.id}`} className="w-11/12 mx-auto my-1 b" key={`${emailDevProject.id}-container`}>
@@ -188,3 +194,95 @@ const EmailDevSection = ({emailDevProjects})=>{
   </>)
 }
 
+const GraphicArtSection = ({graphicArt})=>{
+  return (<>
+    <section className="container mx-auto h-fit border border-4 flex flex-col " id="graphic-art">
+      <table className=" table table-auto b">
+        <tbody>
+          <tr id="graphicArt-title-row" className="">
+            <td className="pt-4 text-2xl text-white/75 " >
+              <span className="pl-6">Graphic</span><br/>
+              <span className="pl-10 relative top-[-1rem] text-6xl ">Art</span>
+              <ul id="graphicArtNavMenu" className="p-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+                <Link href="#web-development">
+                  <a><li className="text-base p-2 text-right button">Web Development</li></a>
+                </Link>
+                <Link href="#email-development">
+                  <a><li className="text-base p-2 text-right button">Email Development</li></a>
+                </Link> 
+                <Link href="#about-me">
+                  <a><li className="text-base p-2 text-right button">About me</li></a>
+                </Link>
+              </ul>
+            </td>           
+          </tr>
+          <tr id="graphicArt-links-row" className="border-t-2 col-span-2 flex flex-wrap justify-evenly">
+            {graphicArt.map((artPiece,index)=>{
+              return (
+                <td className="shrink-0 p-2 button" key={artPiece.id}>
+                  <Link href={`#${artPiece.id}`} key={`${artPiece.name}-link`}>
+                    <a className=" h-full" id={`${artPiece.id}-link`} key={`${artPiece.name}-anchor`}>
+                      {artPiece.name}
+                    </a>
+                  </Link>
+                </td>
+              )
+            })}
+          </tr>
+          <tr id="graphicArt-items-row" className="flex flex-col pt-4 b">
+            {graphicArt.map((artPiece,index)=>{
+              return (
+                <td id={`${artPiece.id}`} className="w-11/12 mx-auto my-1 b" key={artPiece.id}>
+                  <div id={`${artPiece.id}-grid`} className="grid grid-rows-[90%_10%] h-80 b">
+                      <div id={`${artPiece.image}`} className="p-1 bg-black bg-contain "></div>
+                      <div id={`${artPiece.description}`} className="text-center">{artPiece.description}</div>
+                  </div>
+                </td>
+              )
+            })}
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </>)
+}
+
+const AboutMeSection = ({aboutInfo})=>{
+  return (<>
+    <section className="container mx-auto h-fit border border-lime-400 border-4 flex flex-col " id="about-me">
+      <table className=" table table-auto o">
+        <tbody>
+          <tr id="aboutMe-title-row" className="">
+            <td className=" pt-6 text-2xl text-white/75">
+              <span className="pl-6">About</span><br/>
+              <span className="pl-10 relative top-[-1rem] text-6xl ">Me</span>
+              <ul id="aboutMeNavMenu" className="p-2 -top-11 flex flex-col relative float-right border-b-2 sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+                <Link href="#web-development">
+                  <a><li className="text-base p-2 text-right button">Web Development</li></a>
+                </Link>
+                <Link href="#email-development">
+                  <a><li className="text-base p-2 text-right button">Email Development</li></a>
+                </Link> 
+                <Link href="#graphic-art">
+                  <a><li className="text-base p-2 text-right button">Graphic Art</li></a>
+                </Link>
+              </ul>
+            </td>
+          </tr>
+          <tr className="">
+            <div id="aboutme-grid" className="h-80 my-6 p-6 grid grid-cols-6 gap-4 border border-lime-400">
+                <div id="personal-info" className="col-span-4 b">{personalText}</div>
+                <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center b">
+                  <h1 className="text-2xl">Personal</h1>
+                </div>
+                <div id="professional-heading" className="col-span-2 col-start-1 flex justify-center items-center b">
+                  <h1 className="text-2xl">Professional</h1>
+                </div>
+                <div id="professor-info" className="col-start-3 col-span-4 b">{professionalText}</div>
+
+            </div>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </>)}
