@@ -27,7 +27,7 @@ export default function Home() {
       <title>JZ-Portfolio</title>
     </Head>
 
-    <section className="container px-6 mx-auto h-screen border border-4 flex flex-col justify-center items-center" id="landingPage">
+    <section className="container px-6 mx-auto h-screen flex flex-col justify-center items-center" id="landingPage">
       <table className="table table-auto border">
         <tbody>
           <tr id="title-row">
@@ -58,7 +58,7 @@ export default function Home() {
 
 const WebDevSection = ({projects})=>{
   return(<>
-    <section className="container mx-auto h-fit border  border-4 flex flex-col " id="web-development">
+    <section className="container mx-auto h-fit flex flex-col " id="web-development">
       <table className=" table table-auto b">
         <tbody>
           <tr id="webDev-title-row" className="">
@@ -128,7 +128,7 @@ const WebDevSection = ({projects})=>{
 const EmailDevSection = ({emailDevProjects})=>{
 
   return (<>
-    <section className="container  mx-auto h-fit border border-4 flex flex-col " id="email-development">
+    <section className="container  mx-auto h-fit  flex flex-col " id="email-development">
       <table className="table table-auto">
         <tbody>
           <tr id="emailDev-title-row" className="">
@@ -196,7 +196,7 @@ const EmailDevSection = ({emailDevProjects})=>{
 
 const GraphicArtSection = ({graphicArt})=>{
   return (<>
-    <section className="container mx-auto h-fit border border-4 flex flex-col " id="graphic-art">
+    <section className="container mx-auto h-fit  flex flex-col " id="graphic-art">
       <table className=" table table-auto b">
         <tbody>
           <tr id="graphicArt-title-row" className="">
@@ -233,9 +233,9 @@ const GraphicArtSection = ({graphicArt})=>{
             {graphicArt.map((artPiece,index)=>{
               return (
                 <td id={`${artPiece.id}`} className="w-11/12 mx-auto my-1 b" key={artPiece.id}>
-                  <div id={`${artPiece.id}-grid`} className="grid grid-rows-[90%_10%] h-80 b">
+                  <div id={`${artPiece.id}-grid`} className="grid grid-rows-[90%_auto] h-96 b">
                       <div id={`${artPiece.image}`} className="p-1 bg-black bg-contain "></div>
-                      <div id={`${artPiece.description}`} className="text-center">{artPiece.description}</div>
+                      <div id={`${artPiece.description}`} className="flex items-center justify-center">{artPiece.description}</div>
                   </div>
                 </td>
               )
@@ -249,8 +249,8 @@ const GraphicArtSection = ({graphicArt})=>{
 
 const AboutMeSection = ({aboutInfo})=>{
   return (<>
-    <section className="container mx-auto h-fit border border-lime-400 border-4 flex flex-col " id="about-me">
-      <table className=" table table-auto o">
+    <section className="container mx-auto h-screen flex flex-col " id="about-me">
+      <table className=" table table-auto ">
         <tbody>
           <tr id="aboutMe-title-row" className="">
             <td className=" pt-6 text-2xl text-white/75">
@@ -270,17 +270,27 @@ const AboutMeSection = ({aboutInfo})=>{
             </td>
           </tr>
           <tr className="">
-            <div id="aboutme-grid" className="h-80 my-6 p-6 grid grid-cols-6 gap-4 border border-lime-400">
-                <div id="personal-info" className="col-span-4 b">{personalText}</div>
-                <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center b">
+            <div id="aboutme-grid" className=" mt-6 p-6 grid grid-cols-6 gap-4 ">
+                <div id="personal-info" className="col-span-4 text-right break-words">{personalText}</div>
+                <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center bg-gradient-to-r from-[#334] to-transparent">
                   <h1 className="text-2xl">Personal</h1>
                 </div>
-                <div id="professional-heading" className="col-span-2 col-start-1 flex justify-center items-center b">
+                <div id="professional-heading" className="col-span-2 col-start-1 flex justify-center items-center bg-gradient-to-l from-[#334] to-transparent">
                   <h1 className="text-2xl">Professional</h1>
                 </div>
-                <div id="professor-info" className="col-start-3 col-span-4 b">{professionalText}</div>
+                <div id="professor-info" className="col-start-3 col-span-4 ">{professionalText}</div>
 
             </div>
+          </tr>
+          <tr id="techUsed-title" className="flex justify-center text-2xl">Technologies used:</tr>
+          <tr id="techUsed-row" className="mt-2 flex flex-wrap items-center justify-evenly  bg-white ">
+            {techUsed.map((icon)=>{
+              return (
+                <div id={`${icon.name}-icon`} className="p-1" key={`${icon.name}`}>
+                  <Image src={`/${icon.logo}`} width="40" height="40" />
+                </div>
+              )
+            })}
           </tr>
         </tbody>
       </table>

@@ -31,3 +31,7 @@ body{
   color:  white;
   font-weight: bold;
 }
+section,table{
+  border: none;
+  /*border: 4px white solid;*/
+}
