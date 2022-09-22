@@ -12,13 +12,13 @@ import {personalText,professionalText,picture,techUsed} from "../data/aboutMeInf
 
 export default function Home() {
 
-  const [microblogPhrase,setMicroblogPhrase]= useState('Idea of the day');
+  const microblogPhrase = "Tiny gods with tiny computers."
   const [projects,setProjects] = useState(projectPieces);
   const [emailDevProjects,setemailDevProjects] = useState(emailDevProjectPieces);
   const [graphicArt,setGraphicArt] = useState(graphicArtPieces);  
 
   useEffect(()=>{
-    setMicroblogPhrase(microblog_entries[Math.floor(Math.random()*microblog_entries.length)].message)
+    
   },[])
 
   return (<>
@@ -91,20 +91,22 @@ const WebDevSection = ({projects})=>{
               )
             })}
           </tr>
-          <tr id="webDev-items-row" className="flex flex-col pt-4 b">
+          <tr id="webDev-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around ">
             {projects.map((project,index)=>{
               return (
-                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 b" key={project.id}>
-                  <div id={`${project.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_18%_auto] h-[250px] b">
-                    <div id={`${project.id}-screenshot`} className="col-span-1 row-span-2 m-auto b">insert image</div>
-                    <div id={`${project.id}-info`} className="p-4 pt-1  b">
-                      <h1 id={`${project.id}-title`} className="text-center py-1 font-bold ">{project.name}</h1>
-                      <p id={`${project.id}-description`} className="text-sm leading-4">{project.description}</p>
+                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 lg:w-5/12 lg:shrink-0   b" key={project.id}>
+                  <div id={`${project.id}-grid`} className="grid grid-cols-[50%_50%] grid-rows-[70%_18%_12%] h-[250px] lg:h-[500px] lg:grid-rows-[50%_25%_15%] b">
+                    <div id={`${project.id}-screenshot`} className="col-span-1 row-span-2 m-auto lg:col-span-2 lg:row-span-1 b ">
+                      <Image src={project.screenShot} width={375} height={235} />
                     </div>
-                    <div id={`${project.id}-techStack`} className="text-xs flex items-center justify-center p-2 text-center b">
+                    <div id={`${project.id}-info`} className="p-4 pt-1 lg:col-span-2 b">
+                      <h1 id={`${project.id}-title`} className="text-center py-1 font-bold ">{project.name}</h1>
+                      <p id={`${project.id}-description`} className="text-sm leading-4 lg:text-[1rem] lg:leading-5 lg:p-2" >{project.description}</p>
+                    </div>
+                    <div id={`${project.id}-techStack`} className="text-xs flex items-center justify-center p-2 text-center lg:text-sm b">
                       {project.techStack}
                     </div>
-                    <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly  b">
+                    <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly  lg:col-span-1 b">
                       <Link href={project.url} className="">
                         <a id={`${project.id}-url`} className="font-bold button px-4" target="_blank">live site</a>
                       </Link>
@@ -272,18 +274,18 @@ const AboutMeSection = ({aboutInfo})=>{
           <tr className="">
             <div id="aboutme-grid" className=" mt-6 p-6 grid grid-cols-6 gap-4 ">
                 <div id="personal-info" className="col-span-4 text-right break-words">{personalText}</div>
-                <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center bg-gradient-to-r from-[#334] to-transparent">
-                  <h1 className="text-2xl">Personal</h1>
+                <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center bg-gradient-to-r from-[#334] to-transparent ">
+                  <h1 className="text-2xl ">Personal</h1>
                 </div>
+
                 <div id="professional-heading" className="col-span-2 col-start-1 flex justify-center items-center bg-gradient-to-l from-[#334] to-transparent">
                   <h1 className="text-2xl">Professional</h1>
                 </div>
-                <div id="professor-info" className="col-start-3 col-span-4 ">{professionalText}</div>
-
+                <div id="professional-info" className="col-start-3 col-span-4 ">{professionalText}</div>
             </div>
           </tr>
-          <tr id="techUsed-title" className="flex justify-center text-2xl">Technologies used:</tr>
-          <tr id="techUsed-row" className="mt-2 flex flex-wrap items-center justify-evenly  bg-white ">
+          <tr id="techUsed-title" className="flex justify-center text-2xl bg-[#334] py-4">Technologies used:</tr>
+          <tr id="techUsed-row" className="flex flex-wrap items-center justify-evenly  bg-white ">
             {techUsed.map((icon)=>{
               return (
                 <div id={`${icon.name}-icon`} className="p-1" key={`${icon.name}`}>
