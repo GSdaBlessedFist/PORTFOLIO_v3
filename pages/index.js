@@ -94,19 +94,19 @@ const WebDevSection = ({projects})=>{
           <tr id="webDev-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around ">
             {projects.map((project,index)=>{
               return (
-                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 lg:w-5/12 lg:shrink-0   b" key={project.id}>
-                  <div id={`${project.id}-grid`} className="grid grid-cols-[50%_50%] grid-rows-[70%_18%_12%] h-[250px] lg:h-[500px] lg:grid-rows-[50%_25%_15%] b">
-                    <div id={`${project.id}-screenshot`} className="col-span-1 row-span-2 m-auto lg:col-span-2 lg:row-span-1 b ">
+                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 lg:w-5/12 lg:shrink-0 b" key={project.id}>
+                  <div id={`${project.id}-grid`} className="grid grid-cols-[50%_50%] grid-rows-[70%_18%_12%] h-[250px] lg:h-[450px] lg:grid-rows-[50%_150px_auto] ">
+                    <div id={`${project.id}-screenshot`} className="col-span-1 row-span-2 m-auto lg:col-span-2 lg:row-span-1 ">
                       <Image src={project.screenShot} width={375} height={235} />
                     </div>
-                    <div id={`${project.id}-info`} className="p-4 pt-1 lg:col-span-2 b">
-                      <h1 id={`${project.id}-title`} className="text-center py-1 font-bold ">{project.name}</h1>
-                      <p id={`${project.id}-description`} className="text-sm leading-4 lg:text-[1rem] lg:leading-5 lg:p-2" >{project.description}</p>
+                    <div id={`${project.id}-info`} className="p-4 pt-1 lg:col-span-2 ">
+                      <h1 id={`${project.id}-title`} className="text-center py-1 font-bold lg:pt-5">{project.name}</h1>
+                      <p id={`${project.id}-description`} className="text-sm leading-4 lg:text-[1rem] lg:leading-5 lg:p-4 lg:border-b-4 border-white" >{project.description}</p>
                     </div>
-                    <div id={`${project.id}-techStack`} className="text-xs flex items-center justify-center p-2 text-center lg:text-sm b">
+                    <div id={`${project.id}-techStack`} className="text-xs flex items-center justify-center p-2 text-center lg:text-sm ">
                       {project.techStack}
                     </div>
-                    <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly  lg:col-span-1 b">
+                    <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly  lg:col-span-1 ">
                       <Link href={project.url} className="">
                         <a id={`${project.id}-url`} className="font-bold button px-4" target="_blank">live site</a>
                       </Link>
