@@ -23,39 +23,39 @@ export default function Home() {
   
 
   return (<>
+    
+      <Head>
+        <title>JZ-Portfolio</title>
+        {/*<script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
+              <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
+      </Head>
 
-    <Head>
-      <title>JZ-Portfolio</title>
-      {/*<script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
-            <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
-    </Head>
+      <section className="container px-6 mx-auto h-screen flex flex-col justify-center items-center" id="landingPage">
+        <table className="table table-auto border">
+          <tbody>
+            <tr id="title-row">
+              <td className="pb-5  text-center">
+                <div className="text-4xl font-bold">Jason Zamora&apos;s <span className="text-4xl">portfolio</span></div>
+              </td>
+            </tr>
+            <tr id="subTitle-row">
+              <td className="pb-5 text-center text-white">
+                <p className="text-white">web | email developer </p>
+              </td>
+            </tr>
+            <tr id="microBlog-row">
+              <td className="py-2 text-center border border-3">
+                <p>Tiny gods with tiny computers.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section className="container px-6 mx-auto h-screen flex flex-col justify-center items-center" id="landingPage">
-      <table className="table table-auto border">
-        <tbody>
-          <tr id="title-row">
-            <td className="pb-5  text-center">
-              <div className="text-4xl font-bold">Jason Zamora&apos;s <span className="text-4xl">portfolio</span></div>
-            </td>
-          </tr>
-          <tr id="subTitle-row">
-            <td className="pb-5 text-center text-white">
-              <p className="text-white">web | email developer </p>
-            </td>
-          </tr>
-          <tr id="microBlog-row">
-            <td className="py-2 text-center border border-3">
-              <p>Tiny gods with tiny computers.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <WebDevSection/>
-    <EmailDevSection/>
-    <GraphicArtSection/>
-    <AboutMeSection/>
+      <WebDevSection/>
+      <EmailDevSection/>
+      <GraphicArtSection/>
+      <AboutMeSection/>
   </>)
 }
 

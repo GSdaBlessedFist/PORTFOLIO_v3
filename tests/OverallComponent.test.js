@@ -3,6 +3,7 @@ import WebDevSection from "../components/WebDevSection";
 import EmailDevSection from "../components/EmailDevSection";
 import GraphicArtSection from "../components/GraphicArtSection";
 import AboutMeSection from "../components/AboutMeSection";
+import SecondOpinion from "pages/landing-pages/second-opinion-landing-page";
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
 
@@ -30,5 +31,12 @@ describe("Overview of components working",()=>{
 	it('should display AboutMe Section component',()=>{
 		render(<AboutMeSection/>)
 		screen.debug()
+	})
+})
+
+describe("LandingPage:SecondOpinion",()=>{
+	it('should display the SecondOpinion landing page',()=>{
+		render(<SecondOpinion/>)
+		screen.debug();
 	})
 })

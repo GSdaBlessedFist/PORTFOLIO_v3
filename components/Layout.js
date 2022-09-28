@@ -11,10 +11,10 @@ export default function Layout({children}){
 		      		<a className="button p-4 b" >LOGO</a>
 		      	</Link>
 		        <div className="flex " id="topNavBarMenuGroup">
-		        	<Link href="#web-development" id="topNavBarMenu-webDevSection" className="">
+		        	<Link href="/#web-development" id="topNavBarMenu-webDevSection" className="">
 		         		<a className="button p-2 h-full flex items-center  b">Web Development</a>
 		         	</Link> 	
-		         	<Link href="#email-development" id="topNavBarMenu-emailDevSection" className="">
+		         	<Link href="/#email-development" id="topNavBarMenu-emailDevSection" className="">
 		         		<a className="button p-2 h-full flex items-center b">Email Development</a>
 		         	 </Link>
 		        </div>
