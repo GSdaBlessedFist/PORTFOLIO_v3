@@ -2,7 +2,7 @@ import {useState,useEffect,useRef} from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
-import {microblog_entries} from "../data/microblog-entries";
+//import {microblog_entries} from "../data/microblog-entries";
 //import projectPieces from "../data/projectInfo";
 //import emailDevProjectPieces from "../data/emailDevProjectInfo";
 //import graphicArtPieces from "../data/graphicArtInfo";
@@ -15,7 +15,7 @@ import AboutMeSection from "../components/AboutMeSection";
 
 export default function Home() {
 
-  const microblogPhrase = "Tiny gods with tiny computers."
+  //const microblogPhrase = "Tiny gods with tiny computers."
   // const [projects,setProjects] = useState(projectPieces);
   // const [emailDevProjects,setemailDevProjects] = useState(emailDevProjectPieces);
   // const [graphicArt,setGraphicArt] = useState(graphicArtPieces);  
@@ -45,7 +45,7 @@ export default function Home() {
           </tr>
           <tr id="microBlog-row">
             <td className="py-2 text-center border border-3">
-              <p>{microblogPhrase}</p>
+              <p>Tiny gods with tiny computers.</p>
             </td>
           </tr>
         </tbody>
