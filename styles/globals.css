@@ -16,7 +16,7 @@
   .spacer{
     @apply w-[5px] h-[20px] bg-[#112]/50;
   }
-  /*SecondOpinion styles*/
+  /*SecondOpinion (landing-page) styles*/
   .so-font-main{
     font-family: 'Roboto Slab', serif;
   }
