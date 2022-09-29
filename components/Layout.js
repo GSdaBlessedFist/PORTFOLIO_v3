@@ -24,7 +24,7 @@ export default function Layout({children}){
 		    {children}
 		    
 		    <div id="footer">
-		    	<div className="container mx-auto w-screen md:container md:mx-auto sticky bottom-0 b">
+		    	<div className="container relative mx-auto w-screen md:container md:mx-auto md:sticky md:bottom-0 lg:sticky lg:bottom-0 b">
 		    		<div className=" flex justify-center " id="footerInner">
 		    			<p className="p-4 b">FOOTER</p>
 		    		</div>

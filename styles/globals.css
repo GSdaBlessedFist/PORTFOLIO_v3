@@ -10,6 +10,9 @@
   .o {
     @apply border border-4 border-orange-300;
   }
+  .BLUE {
+    @apply border border-[5px] border-blue-400;
+  }
   .button {
     @apply bg-[#223] hover:bg-[#334];
   }
@@ -19,6 +22,9 @@
   /*SecondOpinion (landing-page) styles*/
   .so-font-main{
     font-family: 'Roboto Slab', serif;
+  }
+  .so-border {
+    @apply border-2 border-white;
   }
 }
 
