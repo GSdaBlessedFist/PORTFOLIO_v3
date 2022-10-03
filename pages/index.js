@@ -13,16 +13,10 @@ import GraphicArtSection from "../components/GraphicArtSection";
 import AboutMeSection from "../components/AboutMeSection";
 
 
+
 export default function Home() {
 
-  //const microblogPhrase = "Tiny gods with tiny computers."
-  // const [projects,setProjects] = useState(projectPieces);
-  // const [emailDevProjects,setemailDevProjects] = useState(emailDevProjectPieces);
-  // const [graphicArt,setGraphicArt] = useState(graphicArtPieces);  
-
-  
-
-  return (<>
+    return (<>
     
       <Head>
         <title>JZ-Portfolio</title>
@@ -30,27 +24,30 @@ export default function Home() {
               <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
       </Head>
 
-      <section className="container px-6 mx-auto h-screen flex flex-col justify-center items-center" id="landingPage">
-        <table className="table table-auto border">
-          <tbody>
-            <tr id="title-row">
-              <td className="pb-5  text-center">
-                <div className="text-4xl font-bold">Jason Zamora&apos;s <span className="text-4xl">portfolio</span></div>
-              </td>
-            </tr>
-            <tr id="subTitle-row">
-              <td className="pb-5 text-center text-white">
-                <p className="text-white">web | email developer </p>
-              </td>
-            </tr>
-            <tr id="microBlog-row">
-              <td className="py-2 text-center border border-3">
-                <p>Tiny gods with tiny computers.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      <div id="homepage">
+        <section className="container px-6 mx-auto h-screen flex flex-col justify-center items-center" id="landingPage">
+          <table className="table table-auto border">
+            <tbody>
+              <tr id="title-row">
+                <td className="pb-5  text-center">
+                  <div className="text-4xl font-bold">Jason Zamora&apos;s <span className="text-4xl">portfolio</span></div>
+                </td>
+              </tr>
+              <tr id="subTitle-row">
+                <td className="pb-5 text-center text-white">
+                  <p className="text-white">web | email developer </p>
+                </td>
+              </tr>
+              <tr id="microBlog-row">
+                <td className="py-2 text-center border border-3">
+                  <p>Tiny gods with tiny computers.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      
 
       <WebDevSection/>
       <EmailDevSection/>

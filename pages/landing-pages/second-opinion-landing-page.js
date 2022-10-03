@@ -4,15 +4,17 @@ import SecondOpinionModal from "../../components/SecondOpinionModal";
 
 export default function SecondOpinion(){
 
-	const [isOpen,setIsOpen]=useState(false);
+	const [isOpen,setIsOpen] =useState(false);
 
 	const formSubmission = function(e){
 		e.preventDefault();
 		setIsOpen(true)
+		console.log(isOpen)
 	}
 
 return (<>
 <SecondOpinionModal isOpen={isOpen}/>
+
 <div className="container flex justify-center items-center  my-0 mx-auto border-box lg:py-20 lg:bg-transparent  lg:mx-auto ">
 	<div className="grid grid-rows-[225px_120px_1fr_1fr]  so-border lg:bg-[#070709ff] lg:grid-cols-[348px_400px_340px] lg:grid-rows-4  lg:h-[644px] ">
 		<div id="logo-row" className="grid grid-col-1 grid-rows-[99.9%_.1%] border-r-2 overflow-hidden lg:grid-rows-[.1%_99.9%] lg:row-span-4 " >
