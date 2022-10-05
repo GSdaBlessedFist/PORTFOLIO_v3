@@ -37,7 +37,7 @@ const Content = ({setIsOpen})=>{
 						<br/>
 						<br/><div className="w-full text-center text-blue-400">And again, thanks for clicking through.</div>
 					</div>
-					<button className="border-2 border-blue-400 p-4 rounded-full bg-blue-400/20 hover:bg-blue-400">Close and go to the next project</button>
+					<button className="border-2 border-blue-400 p-4 rounded-full bg-blue-400/20 hover:bg-blue-400" onClick={closeModalNextProject}>Close and go to the next project</button>
 				</div>
 			</div>
 		</div>

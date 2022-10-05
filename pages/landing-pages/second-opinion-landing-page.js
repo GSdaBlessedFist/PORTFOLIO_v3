@@ -1,15 +1,22 @@
-import {useState} from 'react'
+import {useState,useRef} from 'react'
 import Image from 'next/image';
+import emailjs from '@emailjs/browser';
 import SecondOpinionModal from "../../components/SecondOpinionModal";
 
 export default function SecondOpinion(){
-
+	const form = useRef();
 	const [isOpen,setIsOpen] =useState(false);
 
 	const formSubmission = function(e){
 		e.preventDefault();
 		setIsOpen(true)
-		console.log(isOpen)
+
+		emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_SECONDOPINION_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_PUBLIC_KEY)
+	      .then((result) => {
+	          console.log(result.text);
+	      }, (error) => {
+	          console.log(error.text);
+	      });
 	}
 
 return (<>
@@ -29,7 +36,7 @@ return (<>
 			</div>
 		</div>
 		<div id="form-row" className="container flex justify-center items-center lg:pt-0 lg:row-span-2 ">
-			<form action="" className="w-1/2 text-xl pr-5 lg:w-full lg:pr-8 ">
+			<form ref={form} action="" className="w-1/2 text-xl pr-5 lg:w-full lg:pr-8 ">
 				<div id="form-topSection" className="lg:relative lg:-top-12">
 					<div className="py-2 grid grid-cols-[auto_192px] md:grid-cols-[auto_220px] lg:grid-cols-[auto_192px]  ">
 						<div id="url-label" className="so-font-main font-bold text-right pr-4 md:pr-2" required>http:// </div>
