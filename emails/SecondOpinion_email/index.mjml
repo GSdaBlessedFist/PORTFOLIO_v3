@@ -1,0 +1,166 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="450px" />
+    <mj-preview>Thank you for asking. This is your Second Opinion service confirmation</mj-preview>
+    <mj-title>Second Opinion service confirmation</mj-title>
+    <mj-font name="Roboto Slab" href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'></mj-font>
+    <mj-attributes>
+      <mj-class name="b" border="2px black solid" />
+      <mj-class name="bb" border="4px red solid" />
+      <mj-class name="x" border="4px grey solid" />
+      <mj-all padding="0" box-sizing="border-box" word-break="break-word" />
+    </mj-attributes>
+    <mj-style>
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-section background-color="#60a5fa" border-bottom="2px #30527D  solid">
+      <mj-column>
+        <mj-navbar mj-class="b">
+          <mj-navbar-link text-transform="lowercase" color="white">
+            view on site
+          </mj-navbar-link>
+        </mj-navbar>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="">
+      <mj-column mj-class="">
+        <mj-image href="#" src="https://i.ibb.co/2t7tx0Q/secondopinion-hero.png" alt="MJML"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="" background-color="#60a5fa">
+      <mj-column>
+        <mj-text align="center" font-family="Roboto Slab,Roboto">
+          <div style="font-size:28px;padding:4px;color:white;text-shadow: 1px 1px 2px rgba(0,0,0,.35);border-bottom:2px #30527D  solid;">
+            Second Opinion
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="" background-color="#30527D" border-bottom="2px white solid">
+      <mj-column padding="0px 10px">
+        <mj-text align="center">
+          <div style="font-size:18px;padding:4px;color:white;text-shadow: 1px 1px 2px rgba(0,0,0,.35);border-bottom:2px #30527D  solid;">
+            Thanks for asking, {{contact}}<br />
+            since you're here, you might be interested in...
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper background-color="linear-gradient(to top,#60a5fa,black)">
+      <mj-section mj-class="" border-bottom="2px white solid">
+        <mj-group>
+          <mj-column padding="5px" mj-class="">
+            <mj-table>
+              <tr>
+                <td width="30%">
+                  <img style="padding:2px;float:center" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=130&h=100&q=50" alt="laptop" />
+                </td>
+                <td width="70%">
+                  <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;color:white;padding:10px">Great reasons to collaborate with us.</div>
+                </td>
+              </tr>
+            </mj-table>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section mj-class="" border-bottom="2px white solid">
+        <mj-group>
+          <mj-column padding="5px" mj-class="">
+            <mj-table>
+              <tr>
+
+                <td width="70%">
+                  <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;color:white;padding:10px;">The Importance of SEO in your website</div>
+                </td>
+                <td width="30%">
+                  <img style="padding:2px;float:right" src="https://images.unsplash.com/photo-1588064549181-755cf87668ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=130&h=100&q=50" alt="laptop" />
+                </td>
+              </tr>
+            </mj-table>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section mj-class="" border-bottom="2px white solid">
+        <mj-group>
+          <mj-column padding="5px" mj-class="">
+            <mj-table>
+              <tr>
+                <td width="30%">
+                  <img style="padding:2px;float:center" src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=130&h=100&q=50" alt="keyboard" />
+                </td>
+                <td width="70%">
+                  <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;color:white;padding:10px">How design can make or break your business</div>
+                </td>
+              </tr>
+            </mj-table>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-section mj-class="o" background-color="#30527d">
+      <mj-column>
+        <mj-text align="center" font-family="Roboto Slab" font-weight="bold" padding-bottom="15px">
+          <p style="color:white;font-size:25px">...or do you want </p>
+          <button type="submit" style="padding:5px 18px;background:#60a5fa;color:white;font-weight:bold;border:none;border-radius:20px">a total reboot?</button>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="" background-color="#050507" padding="5px">
+      <mj-group>
+        <mj-column mj-class="">
+          <mj-table>
+            <tr>
+              <td>
+                <img src="https://i.ibb.co/6BwBRXj/the-second-opinion-grp-logo-simple.png" alt="MJML" align="right" padding-left="5px" width="75px" height="65px">
+              </td>
+              <td>
+                <div style="color:white;font-size:16px;line-height:12px;text-align:center;padding:0px auto">
+                  Thank you,
+                  {{contact}} <br /><br />
+                  Talk to ya soon.
+                </div>
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#60a5fa">
+      <mj-column>
+        <mj-social mode="horizontal" padding="4px">
+          <mj-social-element name="facebook-noshare" alt="Follow us on Facebook" href="https://facebook.com/#" padding="0px 4px" icon-size="35px" background-color="#60a5fa"></mj-social-element>
+          <mj-social-element name="instagram-noshare" alt="Follow us on Instagram" href="https://instagram.com/#" padding="0px 4px" icon-size="35px" background-color="#60a5fa"></mj-social-element>
+          <mj-social-element name="youtube-noshare" alt="Watch our videos on YouTube" href="https://youtube.com/#" padding="0px 4px" icon-size="35px" background-color="#60a5fa"></mj-social-element>
+          <mj-social-element name="twitter-noshare" alt="Follow us on Twitter" href="https://twitter.com/#" padding="0px 4px" icon-size="35px" background-color="#60a5fa"></mj-social-element>
+          <mj-social-element name="linkedin-noshare" alt="Follow us on LinkedIn" href="https://linkedin.com/#" padding="0px 4px" icon-size="35px" background-color="#60a5fa"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section padding="10px">
+      <mj-column>
+        <mj-text mj-class="">This email was sent to you because you signed up on our website or
+          purchased something from us recently. Not interested?
+          <a href="#" style="color:#7FB7FB ">Unsubscribe</a> or visit
+          <a href="#" style="color:#60a5fa">Second Opinion</a>,<br />
+          123 Main Street, Anywhere, US
+          33333
+        </mj-text>
+        <mj-text mj-class="">
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
