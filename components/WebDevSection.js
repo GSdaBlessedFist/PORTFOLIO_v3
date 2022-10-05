@@ -14,19 +14,19 @@ export default function WebDevSection(){
     <section className="container mx-auto h-fit flex flex-col " id="web-development">
       <table className=" table table-auto b">
         <tbody>
-          <tr id="webDev-title-row" className="">
+          <tr id="webDev-title-row" className="bg-light">
             <td className="pt-4 text-2xl text-white/75 " >
               <span className="pl-6">web development</span><br/>
               <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
-              <ul id="webDevNavMenu" className="p-2 -top-11 flex flex-col relative float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+              <ul id="webDevNavMenu" className="p-0 -top-11 flex flex-col  relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
                 <Link ref={linkEmail} href="#email-development"> 
-                  <a ><li className="text-base p-2 text-right button">Email Development</li></a>
+                  <a ><li className="text-base p-2 text-right hover:underline hover:text-accent">Email Development</li></a>
                 </Link> 
                 <Link href="#graphic-art">  
-                  <a ><li className="text-base p-2 text-right button">Graphic Art</li></a>
+                  <a ><li className="text-base p-2 text-right hover:underline hover:text-accent">Graphic Art</li></a>
                 </Link> 
                 <Link href="#about-me"> 
-                  <a ><li className="text-base p-2 text-right button">About me</li></a>
+                  <a ><li className="text-base p-2 text-right hover:underline hover:text-accent">About me</li></a>
                 </Link> 
               </ul>
             </td>           
@@ -34,7 +34,7 @@ export default function WebDevSection(){
           <tr id="webDev-links-row" className="border-t-2 col-span-2 flex flex-wrap justify-evenly">
             {projects.map((project,index)=>{
               return (
-                <td className="shrink-0 p-2 button" key={project.id}>
+                <td className="grow py-2 px-3 border-primary border-2 hover:bg-accent hover:text-white hover:border hover:border-accent hover:bg-transparent" key={project.id}>
                    <Link href={`#${project.id}`} key={`${project.name}-link`}> 
 
                     <a className=" h-full" id={`${project.id}-link`} key={`${project.name}-anchor`}>

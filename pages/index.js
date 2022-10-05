@@ -30,17 +30,17 @@ export default function Home() {
             <tbody>
               <tr id="title-row">
                 <td className="pb-5  text-center">
-                  <div className="text-4xl font-bold">Jason Zamora&apos;s <span className="text-4xl">portfolio</span></div>
+                  <div className="text-4xl text-accent font-bold">Jason Zamora&apos;s <span className="text-4xl">portfolio</span></div>
                 </td>
               </tr>
               <tr id="subTitle-row">
-                <td className="pb-5 text-center text-white">
-                  <p className="text-white">web | email developer </p>
+                <td className="pb-5 text-center ">
+                  <p className="text-light">web | email developer </p>
                 </td>
               </tr>
               <tr id="microBlog-row">
-                <td className="py-2 text-center border border-3">
-                  <p>Tiny gods with tiny computers.</p>
+                <td className="py-2">
+                  <p className="text-center text-light"><em>Tiny gods with tiny computers.</em></p>
                 </td>
               </tr>
             </tbody>

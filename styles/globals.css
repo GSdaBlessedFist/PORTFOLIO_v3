@@ -14,7 +14,7 @@
     @apply border border-[5px] border-blue-400;
   }
   .button {
-    @apply bg-[#223] hover:bg-[#334];
+    @apply bg-midtone hover:bg-light ;
   }
   .spacer{
     @apply w-[5px] h-[20px] bg-[#112]/50;
@@ -30,11 +30,12 @@
 
  html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body{
   display:flex;
   flex-direction:column;
-	background: #223;
+	background: #010038;
   color: white;
 }
 
