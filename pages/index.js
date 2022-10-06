@@ -24,7 +24,7 @@ export default function Home() {
               <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
       </Head>
 
-      <div id="homepage">
+      <div id="homepage" >
         <section className="container px-6 mx-auto h-screen flex flex-col justify-center items-center" id="landingPage">
           <table className="table table-auto border">
             <tbody>

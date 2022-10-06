@@ -28,14 +28,16 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+}
  html {
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 body{
   display:flex;
   flex-direction:column;
-	background: #010038;
+	/*background: #aaa;*/
   color: white;
 }
 

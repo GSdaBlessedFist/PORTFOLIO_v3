@@ -10,12 +10,34 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'white': '#ffffff',
-        'primary': '#010038',
-        'midtone': '#293A80',
-        'light': '#537EC5',
-        'accent': '#F39422'
+        'bgLight':'#C4C4D4',
+        "bgDark":"#15151E",
+        'primary': '#464660',
+        "lightMidtone": "#A7DDD9",
+        'midtone': '#368B85',
+        'light': '#B4B897',
+        'accent': '#F1E9E5'
       }
     }    
   },
   plugins: [],
 }
+
+
+
+// theme: {
+//     extend:{
+//       colors: {
+//         transparent: 'transparent',
+//         current: 'currentColor',
+//         'white': '#ffffff',
+//         'bgLight':'#C4C4D4',
+//         "bgDark":"#15151E",
+//         'primary': '#464660',
+//         "lightMidtone": "#A7DDD9",
+//         'midtone': '#368B85',
+//         'light': '#B4B897',
+//         'accent': '#F1E9E5'
+//       }
+//     }    
+//   }

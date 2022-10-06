@@ -5,7 +5,7 @@ export default function MyDocument(){
       return (
          <Html>
             <Head />
-            <body>
+            <body className="bg-bgDark">
                <Main/>
                <div id='secondopinion-portal'/>
                <NextScript />

@@ -1,4 +1,4 @@
-const personalText = "Hello, I'm Jason Zamora. When I'm not coding or designing, I can usually be found at the gym or at the XBox.  Overall, my philosophy on life is one of consistent, gradual improvement...on almost everything. Lately, I've been working on my first interactive graphic novel...so much fun.";
+const personalText = "Hello, I'm Jason Zamora. When I'm not coding or designing, I can usually be found at the gym or at the XBox.  Overall, my philosophy on life is one of consistent, gradual improvement... on almost everything. Lately, I've been working on my first interactive graphic novel...so much fun.";
 
 const professionalText = "I have worked with HTML, CSS, Javascript for the greater part of 8yrs and am an aspiring full stack developer. I frequently work with Node.js, Express, MongoDB, MySQL, Handlebars.js, Socket.io, GSAP (library),React, and Sass. I'm also familiar with versioning via Git and API creation. In addition to my focus on web development technology, I'm also skilled at graphic design using Inkscape. My dream role would have me collaborating with front/backend teamates. I'm currently working with NextJS and love it.";
 
