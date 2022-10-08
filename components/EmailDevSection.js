@@ -18,13 +18,13 @@ export default function EmailDevSection(){
 	              <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
 	              <ul id="emailDevNavMenu" className="p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
 	                <Link href="#web-development">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent">Web Development</li></a>
+	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>
 	                </Link>
 	                <Link href="#graphic-art">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent">Graphic Art</li></a>
+	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Graphic Art</li></a>
 	                </Link> 
 	                <Link href="#about-me">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent">About me</li></a>
+	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">About me</li></a>
 	                </Link>
 	              </ul>
 	            </td>
@@ -52,9 +52,19 @@ export default function EmailDevSection(){
 	          	                      <h1 id={`${emailDevProject.id}-title`} className="text-center py-1 font-bold text-accent text-2xl">{emailDevProject.name}</h1>
 	          	                      <p id={`${emailDevProject.id}-description`} className="text-sm leading-4">{emailDevProject.description}</p>
 	          	                    </div>
-	          	                    <div id={`${emailDevProject.id}-techStack`} className="text-sm text-light flex items-center justify-center border border-lightMidtone p-2 text-center lg:text-sm" >
-	          	                      {emailDevProject.techStack}
+
+
+	          	                    <div id={`${emailDevProject.id}-techStack`} className="text-sm text-light flex items-center justify-evenly text-center lg:text-sm" >
+	          	                      
+	          	                      <div className="bg-midtone grow h-full flex justify-center items-center ">{emailDevProject.techStack}</div>
+	          	                      <div id={`${emailDevProject.id}-link-section`} className="bg-primary w-1/3 h-full flex justify-center items-center ">
+	          	                      	<Link href={emailDevProject.url}>
+					                       <a id={`${emailDevProject.id}-link`} className="font-bold p-3 border border-primary text-midtone hover:border hover:border-2 hover:border-midtone" target="_blank">go to project</a>
+					                    </Link>
+	          	                      </div>
 	          	                    </div>
+
+
 	          	                    {/*<div id={`${emailDevProject.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly ">
 	          	                      <Link href={emailDevProject.url} className="">
 	          	                        <a id={`${emailDevProject.id}-url`} className="font-bold button px-4" target="_blank">live site</a>

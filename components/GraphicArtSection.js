@@ -18,13 +18,13 @@ export default function GraphicArtSection(){
 	              <span className="pl-10 relative top-[-1rem] text-6xl ">Art</span>
 	              <ul id="graphicArtNavMenu" className="p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
 	                <Link href="#web-development">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent">Web Development</li></a>
+	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>
 	                </Link>
 	                <Link href="#email-development">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent">Email Development</li></a>
+	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Email Development</li></a>
 	                </Link> 
 	                <Link href="#about-me">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent">About me</li></a>
+	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">About me</li></a>
 	                </Link>
 	              </ul>
 	            </td>           

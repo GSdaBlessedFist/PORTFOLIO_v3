@@ -12,10 +12,10 @@ export default function Layout({children}){
 		      	</Link>
 		        <div className="flex " id="topNavBarMenuGroup">
 		        	<Link href="/#web-development" id="topNavBarMenu-webDevSection" className="">
-		         		<a className="button p-2 h-full flex items-center  ">Web Development</a>
+		         		<a className="button p-2 h-full flex items-center hover:animate-fadeIn ">Web Development</a>
 		         	</Link> 	
 		         	<Link href="/#email-development" id="topNavBarMenu-emailDevSection" className="">
-		         		<a className="button p-2 h-full flex items-center  ">Email Development</a>
+		         		<a className="button p-2 h-full flex items-center hover:animate-fadeIn">Email Development</a>
 		         	 </Link>
 		        </div>
 		      </div>

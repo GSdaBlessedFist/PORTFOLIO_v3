@@ -22,7 +22,8 @@ const Content = ({setIsOpen})=>{
 	};
 
 	return (<>
-		<div className="absolute flex justify-center items-center opacity-1 top-8 inset-12 lg:top-8 ">
+		<div id="secondOpinionModal" className="animate-fadeIn">
+			<div  className="absolute flex justify-center items-center opacity-1 top-8 inset-12 lg:animate-slideInRight sm:animate-slideInUp lg:top-8 ">
 
 			<div id="secondOpinionModal-grid" className="w-full  grid grid-cols-1 grid-rows-['175px_auto'] so-border md:w-3/4 lg:w-4/5 lg:h-3/5">
 				<div className="flex justify-between items-center px-5 bg-blue-400 py-5">
@@ -41,6 +42,8 @@ const Content = ({setIsOpen})=>{
 				</div>
 			</div>
 		</div>
+		</div>
+		
 		
 	</>)
 }

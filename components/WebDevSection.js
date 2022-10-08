@@ -20,13 +20,13 @@ export default function WebDevSection(){
               <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
               <ul id="webDevNavMenu" className="p-0 -top-11 flex flex-col  relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
                 <Link ref={linkEmail} href="#email-development"> 
-                  <a ><li className="text-bold p-2 text-right hover:text-accent">Email Development</li></a>
+                  <a ><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Email Development</li></a>
                 </Link> 
                 <Link href="#graphic-art">  
-                  <a ><li className="text-bold p-2 text-right hover:text-accent">Graphic Art</li></a>
+                  <a ><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Graphic Art</li></a>
                 </Link> 
                 <Link href="#about-me"> 
-                  <a ><li className="text-bold p-2 text-right hover:text-accent">About me</li></a>
+                  <a ><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">About me</li></a>
                 </Link> 
               </ul>
             </td>           

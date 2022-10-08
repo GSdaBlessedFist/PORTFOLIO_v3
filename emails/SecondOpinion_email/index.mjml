@@ -11,13 +11,30 @@
       <mj-all padding="0" box-sizing="border-box" word-break="break-word" />
     </mj-attributes>
     <mj-style>
+      @font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmYWRjRdE.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rj.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
     </mj-style>
   </mj-head>
   <mj-body>
-    <mj-section background-color="#60a5fa" border-bottom="2px #30527D  solid">
+    <mj-section background-color="#60a5fa" border-bottom="2px #30527D solid">
       <mj-column>
         <mj-navbar mj-class="b">
-          <mj-navbar-link text-transform="lowercase" color="white">
+          <mj-navbar-link href="www.yahoo.com" text-decoration="none" text-transform="lowercase" color="white">
             view on site
           </mj-navbar-link>
         </mj-navbar>
@@ -26,13 +43,13 @@
 
     <mj-section mj-class="">
       <mj-column mj-class="">
-        <mj-image href="#" src="https://i.ibb.co/2t7tx0Q/secondopinion-hero.png" alt="MJML"></mj-image>
+        <mj-image  src="https://i.ibb.co/2t7tx0Q/secondopinion-hero.png" alt="MJML"></mj-image>
       </mj-column>
     </mj-section>
 
     <mj-section mj-class="" background-color="#60a5fa">
       <mj-column>
-        <mj-text align="center" font-family="Roboto Slab,Roboto">
+        <mj-text align="center" font-family="Roboto Slab">
           <div style="font-size:28px;padding:4px;color:white;text-shadow: 1px 1px 2px rgba(0,0,0,.35);border-bottom:2px #30527D  solid;">
             Second Opinion
           </div>
@@ -51,18 +68,20 @@
       </mj-column>
     </mj-section>
 
-    <mj-wrapper background-color="linear-gradient(to top,#60a5fa,black)">
+    <mj-wrapper background-color="linear-gradient(to top,#60a5fa,#000000)">
       <mj-section mj-class="" border-bottom="2px white solid">
         <mj-group>
           <mj-column padding="5px" mj-class="">
             <mj-table>
               <tr>
-                <td width="30%">
-                  <img style="padding:2px;float:center" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=130&h=100&q=50" alt="laptop" />
-                </td>
-                <td width="70%">
-                  <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;color:white;padding:10px">Great reasons to collaborate with us.</div>
-                </td>
+                  <td width="30%">
+                    <img style="padding:2px;float:center" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=130&h=100&q=50" alt="laptop" />
+                  </td>
+                    <td width="70%">
+                      <a href="www.yahoo.com" style="color:white;text-decoration:none;">
+                        <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;padding:10px">Great reasons to collaborate with us.</div>
+                      </a>
+                    </td>
               </tr>
             </mj-table>
           </mj-column>
@@ -76,7 +95,9 @@
               <tr>
 
                 <td width="70%">
-                  <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;color:white;padding:10px;">The Importance of SEO in your website</div>
+                  <a href="www.yahoo.com" style="color:white;text-decoration:none;">
+                    <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;padding:10px;">The Importance of SEO in your website</div>
+                  </a>
                 </td>
                 <td width="30%">
                   <img style="padding:2px;float:right" src="https://images.unsplash.com/photo-1588064549181-755cf87668ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=130&h=100&q=50" alt="laptop" />
@@ -96,7 +117,9 @@
                   <img style="padding:2px;float:center" src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=130&h=100&q=50" alt="keyboard" />
                 </td>
                 <td width="70%">
-                  <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;color:white;padding:10px">How design can make or break your business</div>
+                  <a href="www.yahoo.com" style="color:white;text-decoration:none;">
+                    <div style="font-family:Roboto Slab;font-size:18px;font-weight:bold;text-align:center;padding:10px">How design can make or break your business</div>
+                  </a>
                 </td>
               </tr>
             </mj-table>
@@ -109,7 +132,9 @@
       <mj-column>
         <mj-text align="center" font-family="Roboto Slab" font-weight="bold" padding-bottom="15px">
           <p style="color:white;font-size:25px">...or do you want </p>
-          <button type="submit" style="padding:5px 18px;background:#60a5fa;color:white;font-weight:bold;border:none;border-radius:20px">a total reboot?</button>
+            <a href="www.yahoo.com">
+              <button type="submit" style="padding:5px 18px;background-color:#60a5fa;color:white;text-decoration:none;border:2px #60a5fa solid;font-weight:bold;border-radius:20px">a total reboot?</button>
+            </a>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -123,7 +148,7 @@
                 <img src="https://i.ibb.co/6BwBRXj/the-second-opinion-grp-logo-simple.png" alt="MJML" align="right" padding-left="5px" width="75px" height="65px">
               </td>
               <td>
-                <div style="color:white;font-size:16px;line-height:12px;text-align:center;padding:0px auto">
+                <div style="color:white;font-family:Roboto;font-size:16px;line-height:12px;text-align:center;padding:0px auto">
                   Thank you,
                   {{contact}} <br /><br />
                   Talk to ya soon.
@@ -152,8 +177,8 @@
       <mj-column>
         <mj-text mj-class="">This email was sent to you because you signed up on our website or
           purchased something from us recently. Not interested?
-          <a href="#" style="color:#7FB7FB ">Unsubscribe</a> or visit
-          <a href="#" style="color:#60a5fa">Second Opinion</a>,<br />
+          <a href="www.yahoo.com" text-decoration="none" style="color:#7FB7FB ">Unsubscribe</a> or visit
+          <a href="www.yahoo.com" text-decoration="none" style="color:#60a5fa">Second Opinion</a>,<br />
           123 Main Street, Anywhere, US
           33333
         </mj-text>
