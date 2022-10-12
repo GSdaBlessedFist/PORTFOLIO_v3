@@ -2,11 +2,11 @@
 import {useState,useEffect,useRef} from "react";
 import Link from "next/link";
 import Image from 'next/image';
-import graphicArtPieces from "../data/graphicArtInfo";
+//import graphicArtPieces from "../data/graphicArtInfo";
 
-export default function GraphicArtSection(){
+export default function GraphicArtSection({graphicArt}){
 
-	const [graphicArt,setGraphicArt] = useState(graphicArtPieces);  
+	//const [graphicArt,setGraphicArt] = useState(graphicArtPieces);  
 	
 	  return (<>
 	    <section className="container mx-auto h-fit  flex flex-col " id="graphic-art">

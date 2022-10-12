@@ -19,9 +19,9 @@ module.exports = {
         'accent': '#F1E9E5'
       },
       animation:{
-        fadeIn: "fadeIn .456s linear forwards",
-        slideInRight : "slideInRight .456s linear forwards",
-        slideInUp : "slideInUp .456s linear forwards"
+        fadeIn: "fadeIn .36s linear forwards",
+        slideInRight : "slideInRight .36s linear forwards",
+        slideInUp : "slideInUp .36s linear forwards"
       },
       keyframes:{
         fadeIn:{

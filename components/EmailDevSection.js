@@ -2,11 +2,11 @@
 import {useState,useEffect,useRef} from "react";
 import Link from "next/link";
 import Image from 'next/image';
-import emailDevProjectPieces from "../data/emailDevProjectInfo";
+//import emailDevProjectPieces from "../data/emailDevProjectInfo";
 
-export default function EmailDevSection(){
+export default function EmailDevSection({emailDevProjects}){
 
-	const [emailDevProjects,setemailDevProjects] = useState(emailDevProjectPieces);
+	//const [emailDevProjects,setemailDevProjects] = useState(emailDevProjectPieces);
 
 	  return (<>
 	    <section className="container  mx-auto h-fit  flex flex-col " id="email-development">

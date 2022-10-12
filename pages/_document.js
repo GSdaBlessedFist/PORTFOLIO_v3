@@ -7,6 +7,7 @@ export default function MyDocument(){
             <Head />
             <body className="bg-bgDark">
                <Main/>
+               <div id='additional-project-info-portal'/>
                <div id='secondopinion-portal'/>
                <NextScript />
             </body>
