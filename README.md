@@ -16,7 +16,12 @@
 </div>
 
 ## :shipit: About Me :
-- Doodlesmith + coder + developer
+- 🟠TL;DR = 🔴Doodlesmith + 🟡Coder
+- **frontend**/backend developer
+- I've learned ***how*** to learn what is needed for the project.
+- custom artwork
+- positive philosophy
+
 
 - :mailbox: You can reach me at GSdaBlessedFist@gmail.com 
 
