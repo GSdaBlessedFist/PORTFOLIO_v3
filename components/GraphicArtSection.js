@@ -2,7 +2,7 @@
 import {useState,useEffect,useRef} from "react";
 import Link from "next/link";
 import Image from 'next/image';
-//import graphicArtPieces from "../data/graphicArtInfo";
+import backToToplogo from "../assets/theProgression-icon.png";
 
 export default function GraphicArtSection({graphicArt}){
 
@@ -16,6 +16,13 @@ export default function GraphicArtSection({graphicArt}){
 	            <td className="pt-4 text-2xl text-white/75 " >
 	              <span className="pl-6">Graphic</span><br/>
 	              <span className="pl-10 relative top-[-1rem] text-6xl ">Art</span>
+	              <div className="float-right pr-10 overflow-hidden ">
+	                <Link href="/">
+	                  <a className=" p-4 " >
+	                    <Image id="graphicArt-b2Top-button" src={backToToplogo} width={73.92} height={19.8} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>
+	                  </a>
+	                </Link>
+	              </div>
 	              <ul id="graphicArtNavMenu" className="p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
 	                <Link href="#web-development">
 	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>

@@ -2,6 +2,7 @@
 import {useState,useEffect,useRef} from "react";
 import Link from "next/link";
 import Image from 'next/image';
+import backToToplogo from "../assets/theProgression-icon.png";
 //import emailDevProjectPieces from "../data/emailDevProjectInfo";
 
 export default function EmailDevSection({emailDevProjects}){
@@ -16,6 +17,13 @@ export default function EmailDevSection({emailDevProjects}){
 	            <td className=" pt-6 text-2xl text-white/75">
 	              <span className="pl-6">Email Development</span><br/>
 	              <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
+	              <div className="float-right pr-10 overflow-hidden ">
+	                <Link href="/">
+	                  <a className=" p-4 " >
+	                    <Image id="emailDev-b2Top-button" src={backToToplogo} width={73.92} height={19.8} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>
+	                  </a>
+	                </Link>
+	              </div>
 	              <ul id="emailDevNavMenu" className="p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
 	                <Link href="#web-development">
 	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>

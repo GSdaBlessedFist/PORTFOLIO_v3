@@ -3,6 +3,7 @@ import {useState,useEffect,useRef} from "react";
 import Link from "next/link";
 import Image from 'next/image';
 import MoreInfoModal from "./MoreInfoModal";
+import backToToplogo from "../assets/theProgression-icon.png";
 
 export default function WebDevSection({projects}){
 
@@ -27,12 +28,19 @@ export default function WebDevSection({projects}){
     <MoreInfoModal isOpen={isOpen} setIsOpen={setIsOpen} name={name} short={short} description={description} learned={learned}/>
 
     <section className="container mx-auto h-fit flex flex-col " id="web-development">
-      <table className=" table table-auto b">
+      <table className=" table table-auto">
         <tbody>
-          <tr id="webDev-title-row" className="bg-light">
-            <td className="pt-4 text-2xl text-white/75 " >
+          <tr id="webDev-title-row" className="bg-light ">
+            <td className="pt-4 text-2xl text-white/75 BLUE" >
               <span className="pl-6">web development</span><br/>
               <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
+              <div className="float-right pr-10 overflow-hidden ">
+                <Link href="/">
+                  <a className=" p-4 " >
+                    <Image id="webDev-b2Top-button" src={backToToplogo} width={73.92} height={19.8} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>
+                  </a>
+                </Link>
+              </div>
               <ul id="webDevNavMenu" className="p-0 -top-11 flex flex-col  relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
                 <Link ref={linkEmail} href="#email-development"> 
                   <a ><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Email Development</li></a>
