@@ -23,7 +23,7 @@ const Content = ({setIsOpen,name,short,description,learned})=>{
 	return (<>
 		<div id="MoreInfoModal" className="animate-fadeIn">
 			<div id="overlay" className="fixed  inset-0 bg-gray-900 bg-opacity-80 overflow-y-auto h-full w-full"></div>
-			<div className="border border-4 border-midtone h-4/5 fixed overscroll-none flex justify-center items-center opacity-1 top-20 inset-y-16 inset-x-12 drop-shadow-md md:inset-x-16 lg:inset-x-32 xl:inset-x-60 lg:top-20 ">
+			<div className="border border-4 border-midtone h-3/5 lg:h-4/5 fixed overscroll-none flex justify-center items-center opacity-1 top-20 inset-y-16 inset-x-12 drop-shadow-md md:inset-x-16 lg:inset-x-32 xl:inset-x-60 lg:top-20 ">
 				<div className="bg-bgDark w-full h-full">
 					<div id="additionalProjectInfoModal-grid" className="h-full grid grid-rows-[10%_5%_1fr_2.5%_5%] grid-cols-[75%_25%]">
 

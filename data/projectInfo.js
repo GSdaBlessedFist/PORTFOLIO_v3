@@ -36,9 +36,15 @@ const projectInfo = [
 	{
 		id: "react-movie-search",
 		name: "React-movie-search",
-		short: "This app pulls from The Movie Database (TMDB) Api to find general info on quite a few movies.",
-		description: "This SPA pulls data from the TMDB Api using a simple fetch call.",
-		learned: ["data-attributes","Cosmic CMS","thing3","thing4"],
+		short: "The goal was to connect to an api to create a movie search app.",
+		description: `
+			<div style="word-break: break-word;font-size:1.35rem;">
+				<span style="font-size:1.5rem;">This</span> 
+				<b>SPA</b> pulls from The Movie Database (TMDB) Api using a simple <b>fetch</b> call to find general info on quite a few movies.
+			</div><br/>
+
+		`,
+		learned: ["the Movie Database"],
 		techStack: "React, SASS, TMDB Api, and Vercel",
 		screenShot: "/images/movie-search-screenshot.png",
 		url: "https://tmdb-movie-search-cxueep507-gsdablessedfist.vercel.app/",

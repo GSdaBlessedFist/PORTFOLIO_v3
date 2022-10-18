@@ -31,7 +31,7 @@ export default function WebDevSection({projects}){
       <table className=" table table-auto">
         <tbody>
           <tr id="webDev-title-row" className="bg-light ">
-            <td className="pt-4 text-2xl text-white/75 BLUE" >
+            <td className="pt-4 text-2xl text-white/75" >
               <span className="pl-6">web development</span><br/>
               <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
               <div className="float-right pr-10 overflow-hidden ">

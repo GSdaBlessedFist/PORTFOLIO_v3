@@ -12,12 +12,12 @@ export default function SecondOpinion(){
 		e.preventDefault();
 		setIsOpen(true)
 
-		// emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_SECONDOPINION_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_PUBLIC_KEY)
-	 //      .then((result) => {
-	 //          console.log(result.text);
-	 //      }, (error) => {
-	 //          console.log(error.text);
-	 //      });
+		emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_SECONDOPINION_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_PUBLIC_KEY)
+	      .then((result) => {
+	          console.log(result.text);
+	      }, (error) => {
+	          console.log(error.text);
+	      });
 	}
 
 return (<>

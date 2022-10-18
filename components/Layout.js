@@ -43,11 +43,11 @@ export default function Layout({children}){
 					      	</Link>
 		    			</div>
 		    		</div>
-		    		<div className="flex justify-between items-center bg-primary py-3 px-6" id="footerInner-BottomRow">
+		    		<div className="flex justify-evenly items-center bg-primary py-3 px-6" id="footerInner-BottomRow">
 		    			<div>Jason Zamora</div>
 		    			<div>
 		    				<Link href="https://github.">
-			    				<a>Contact Me</a>
+			    				<a>Contact</a>
 			    			</Link>
 		    			</div>
 		    			<div>

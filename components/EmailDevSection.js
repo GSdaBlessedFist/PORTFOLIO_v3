@@ -8,12 +8,13 @@ import backToToplogo from "../assets/theProgression-icon.png";
 export default function EmailDevSection({emailDevProjects}){
 
 	//const [emailDevProjects,setemailDevProjects] = useState(emailDevProjectPieces);
-
+		const x = emailDevProjects[0].scrWidth;
+		console.log(x)
 	  return (<>
 	    <section className="container  mx-auto h-fit  flex flex-col " id="email-development">
-	      <table className="table table-auto">
+	      <table className="table table-auto ">
 	        <tbody>
-	          <tr id="emailDev-title-row" className="bg-light">
+	          <tr id="emailDev-title-row" className="bg-light ">
 	            <td className=" pt-6 text-2xl text-white/75">
 	              <span className="pl-6">Email Development</span><br/>
 	              <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
@@ -53,12 +54,16 @@ export default function EmailDevSection({emailDevProjects}){
 	          	          <tr id="emailDev-items-row" className=" flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around">
 	          	            {emailDevProjects.map((emailDevProject)=>{
 	          	              return (
-	          	                <td id={`${emailDevProject.id}`} className="w-11/12 mx-auto my-1 " key={`${emailDevProject.id}-container`}>
-	          	                  <div id={`${emailDevProject.id}-grid`} className="grid grid-cols-[30%_auto] grid-rows-[70%_30%] h-[250px] my-4 border border-4 border-light shadow-xl">
-	          	                    <div id={`${emailDevProject.id}-screenshot`} className="col-span-1 row-span-2 m-auto b">insert image</div>
-	          	                    <div id={`${emailDevProject.id}-info`} className="p-4 pt-1 ">
-	          	                      <h1 id={`${emailDevProject.id}-title`} className="text-center py-1 font-bold text-accent text-2xl">{emailDevProject.name}</h1>
-	          	                      <p id={`${emailDevProject.id}-description`} className="text-sm leading-4">{emailDevProject.description}</p>
+	          	                <td id={`${emailDevProject.id}`} className=" w-11/12 mx-auto my-1 " key={`${emailDevProject.id}-container`}>
+	          	                  <div id={`${emailDevProject.id}-grid`} className="grid grid-cols-[200px_auto] lg:grid-cols-[400px_auto] grid-rows-[76%_auto] h-[250px] overflow-hidden my-4 border border-4 border-light shadow-xl ">
+	          	                    <div id={`${emailDevProject.id}-screenshot`} className="col-span-1 row-span-2 h-full flex items-center ">
+	          	                    	<div className="" >
+	          	                    		<img src={emailDevProject.screenShot} alt="landing page screenshot" className=""/>
+	          	                    	</div>
+	          	                    </div>
+	          	                    <div id={`${emailDevProject.id}-info`} className=" ">
+	          	                      <h1 id={`${emailDevProject.id}-title`} className="text-center py-1 font-bold bg-midtone text-accent text-2xl">{emailDevProject.name}</h1>
+	          	                      <p id={`${emailDevProject.id}-description`} className="text-sm lg:text-xl leading-4 p-4">{emailDevProject.description}</p>
 	          	                    </div>
 
 
