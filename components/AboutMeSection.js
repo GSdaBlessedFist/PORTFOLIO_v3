@@ -8,9 +8,9 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
 
 
   return (<>
-    <section className="container mx-auto h-screen flex flex-col " id="about-me">
-      <table className=" table table-auto ">
-        <tbody>
+    <section className="container mx-auto h-full flex flex-col " id="about-me">
+      <table className=" table table-auto">
+        <tbody className="">
           <tr id="aboutMe-title-row" className="bg-light">
             <td className=" pt-6 text-2xl text-white/75">
               <span className="pl-6">About</span><br/>
@@ -37,7 +37,7 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
           </tr>
           <tr className="">
             <td>
-              <div id="aboutme-grid" className=" mt-6 p-6  grid grid-cols-6 gap-4 lg:py-20">
+              <div id="aboutme-grid" className=" mt-2 p-6  grid grid-cols-6 gap-4 lg:py-20">
                 <div id="personal-info" className="col-span-4 text-right break-words font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white to-light lg:text-2xl">{aboutMePersonal }</div>
                 <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center bg-gradient-to-r from-accent/20 to-transparent ">
                   <div className="text-2xl lg:text-3xl">Personal</div>
@@ -50,15 +50,17 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
             </div>
             </td>
           </tr>
-          <tr id="techUsed-title" className="flex justify-center text-2xl bg-midtone py-4">Technologies used:</tr>
-          <tr id="techUsed-row" className="flex flex-wrap items-center justify-evenly  bg-white ">
-            {aboutMeTech.map((icon)=>{
-              return (
-                <div id={`${icon.name}-icon`} className="p-1" key={`${icon.name}`}>
-                  <Image src={`/${icon.logo}`} width="40" height="40" alt={"a screenshot"}/>
-                </div>
-              )
-            })}
+          <tr className="">
+            <td id="techUsed-title" className="flex justify-center text-2xl bg-midtone py-4">Technologies used:</td>
+            <td id="techUsed-row" className="flex flex-wrap items-center justify-evenly  bg-white ">
+              {aboutMeTech.map((icon)=>{
+                return (
+                  <div id={`${icon.name}-icon`} className="p-1" key={`${icon.name}`}>
+                    <Image src={`/${icon.logo}`} width="40" height="40" alt={"a screenshot"}/>
+                  </div>
+                )
+              })}
+            </td>
           </tr>
         </tbody>
       </table>

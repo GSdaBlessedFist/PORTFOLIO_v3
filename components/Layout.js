@@ -1,20 +1,46 @@
+import {useRef,useState,useEffect} from "react";
 import Image from 'next/image';
 import Link from "next/link";
+import emailjs from '@emailjs/browser';
 import logo from "../assets/theProgression-icon.png";
+import consiseLogo from "../assets/theProgression-simplifiedIcon(205x205).png";
+
+
 
 const p = console.log;
 export default function Layout({children}){
 
+	const contactFormSection = useRef();
+	const contactForm = useRef();
+	const [contactSectionOpen,setContactSectionOpen]=useState(false);
+
+	const formSubmission = function(e){
+		e.preventDefault();
+
+		emailjs.sendForm(process.env.NEXT_PUBLIC_GMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_GMAIL_TEMPLATE_ID, contactForm.current, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
+	      .then((result) => {
+	          console.log(result.text);
+	      }, (error) => {
+	          console.log(error.text);
+	      });
+	}
+
 	function contactOpen() {
-		return null
+		if(contactSectionOpen==false){
+			contactFormSection.current.style.display="inline";
+			
+		}
+		
+		setContactSectionOpen(true)
 	}
 	
 	return (<>
 		    <div className="container mx-auto w-screen md:container md:mx-auto  top-0 bg-midtone" id="topNavBar">
 		      <div className=" flex justify-between" id="topNavarInner">
 		      	<Link href="/">
-		      		<a className="button p-4 " >
-		      			<Image src={logo} width={112} height={30} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>
+		      		<a className="button px-4 py-2" >
+		      			{/*<Image src={logo} width={112} height={30} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>*/}
+		      			<Image src={consiseLogo} width={50} height={50} alt={"site logo"}/>
 		      		</a>
 		      	</Link>
 		        <div className="flex " id="topNavBarMenuGroup">
@@ -30,8 +56,8 @@ export default function Layout({children}){
 
 		    {children}
 		    
-		    <div id="footer">
-		    	<div className="container relative mx-auto w-screen flex flex-col bg-midtone md:container md:mx-auto md:sticky md:bottom-0 lg:sticky lg:bottom-0">
+		    <div id="footer" className="mt-2">
+		    	<div className="container relative mx-auto w-screen h-full flex flex-col bg-midtone md:container md:mx-auto md:sticky md:bottom-0 lg:sticky lg:bottom-0">
 		    		<div id="footerInner-topRow" className="flex justify-evenly items-center ">
 		    			<div className="">
 		    				<p className="text-xl"><b>Thank you for visiting my portfolio</b></p>
@@ -47,10 +73,10 @@ export default function Layout({children}){
 					      	</Link>
 		    			</div>
 		    		</div>
-		    		<div className="flex justify-evenly items-center bg-primary " id="footerInner-BottomRow">
+		    		<div className="flex justify-evenly items-center bg-primary overflow-hidden" id="footerInner-BottomRow">
 		    			<div>Jason Zamora</div>
-		    			<div>
-		    				<button id="contact-footer-button" className="bg-primary hover:bg-light p-4" onClick={contactOpen}>Contact</button>
+		    			<div className="flex-grow-0">
+		    				<button id="contact-footer-button" className="bg-primary hover:text-accent p-4 tracking-normal animate-fadeInOut" onClick={contactOpen}>Contact Me</button>
 		    			</div>
 		    			<div>
 		    				<ul>
@@ -58,28 +84,30 @@ export default function Layout({children}){
 		    				</ul>
 		    			</div>
 		    		</div>
-		    		<form action="" id="contact-form" className="w-full lg:w-4/5 mx-auto grid grid-cols-4 mb-4 lg:grid-cols-8 grid-rows-2 o">
-		    			
-		    				<div id="name-section" className="col-start-1 col-span-1 lg:col-start-2 lg:col-span-3 flex justify-space items-center p-4 b">
-		    					<label htmlFor="" className="font-bold pr-2">Name:</label>
-		    					<input id="footer-contactName-input" type="text" className="w-[210px] lg:w-72 rounded-full bg-bgLight lg:text-xl text-primary text-center p-2 b" required/>
+		    		<div id="contact-form-section" ref={contactFormSection} className="hidden">
+		    			<form action="" id="contact-form" ref={contactForm} name="contact-form" className="w-full flex flex-row mb-4 text-base lg:text-xl bg-gradient-to-b from-bgDark to bg-primary">
+		    			<div id="form-container" className="w-3/4 mx-auto pt-3 flex flex-col items-end">
+		    				<div className="py-2">
+		    					<label htmlFor="name" className="pr-3">Name:</label>
+		    					<input id="name-input" name="name" type="text" className="text-primary rounded-full py-2 text-center" defaultValue=""/>
 		    				</div>
-		    				<div id="email-section" className="col-start-3 col-span-2 lg:col-start-5 lg:col-span-3 flex justify-space items-center p-4 b">
-		    					<label htmlFor="" className="font-bold pr-2">email:</label>
-		    					<input id="footer-contactEmail-input" type="email" className="w-[210px] lg:w-72 rounded-full bg-bgLight text-xl text-primary text-center p-2" required/>
+		    				<div className="py-2">
+		    					<label htmlFor="email" className="pr-3">Email:</label>
+		    					<input id="email-input" name="email" type="email" className="text-primary rounded-full py-2 text-center" defaultValue=""/>
 		    				</div>
-		    				<div id="contact-bottom-row" className="row-start-2 col-start-1 col-span-4 grid grid-cols-4 lg:my-auto lg:col-start-2 lg:col-span-6 lg:col-span-6 lg:grid lg:grid-cols-6 b">
-		    					<div id="contact-message" className="col-start-1 col-span-3 lg:col-span-5 b">
-			    					<label htmlFor="" className="font-bold pl-4 pr-2">Message:</label>
-			    					<input id="footer-message-input" type="text" className="w-3/4 lg:w-5/6 lg:my-4 rounded-full bg-bgLight text-xl text-primary text-center py-2" />
-			    				</div>
-			    				<div id="footer-submit" className="row-start- lg:row-start-1 col-start-4 col-span-1 lg:col-start-6 lg:col-span-1 lg:flex lg:item-center mx-auto b">		    					
-			    					<button  type="submit" className="button border-2 border-accent rounded-full font-bold p-2 lg:p-4  hover:text-primary hover:bg-accent" >SEND</button>
-			    				</div>
+		    				<div className="py-2">
+		    					<label htmlFor="message" className="pr-3">Message:</label>
+		    					<textarea name="message-input" id="message-input" name="message" rows="1" className="text-primary rounded-full py-2 text-center" defaultValue=""></textarea>
 		    				</div>
-		    				
-		    			
+		    				<div className="py-2">
+		    					<button id="contact-submit" type="submit" className="button rounded-full b p-4" onClick={formSubmission}>SEND</button>
+		    				</div>
+		    			</div>
+		    			<div id="footer-logo" className="p-4 ml-6 lg:-ml-6 opacity-25 b">
+		    				<Image src={consiseLogo} width={205} height={205} alt="the simplified logo" layout="fixed"/>
+		    			</div>
 		    		</form>
+		    		</div>
 		    	</div>
 		    </div>
 	</>)

@@ -21,7 +21,8 @@ module.exports = {
       animation:{
         fadeIn: "fadeIn .36s linear forwards",
         slideInRight : "slideInRight .36s linear forwards",
-        slideInUp : "slideInUp .36s linear forwards"
+        slideInUp : "slideInUp .36s linear forwards",
+        fadeInOut: "fadeInOut 2.25s ease-out 5s infinite"
       },
       keyframes:{
         fadeIn:{
@@ -35,6 +36,26 @@ module.exports = {
         slideInUp:{
           '0%':{ transform: "translateY(50px)" },
           '100%':{ transform: "translateY(0px)" }
+        },
+        fadeInOut:{
+          '0%,100%':{
+            opacity:0,
+            transform: "scale(1)"
+          },
+          "25%":{
+            opacity:0.25
+          },
+          "50%":{
+            opacity:1,
+            
+          },
+          "80%":{
+            opacity:0
+          },
+          "100%":{
+            transform: "scale(1.25) translate(0px,-8px)",
+            
+          }
         }
       }
     }    
