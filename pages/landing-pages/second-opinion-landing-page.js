@@ -1,5 +1,6 @@
 import {useState,useRef} from 'react'
 import Image from 'next/image';
+import Head from "next/head";
 import emailjs from '@emailjs/browser';
 import SecondOpinionModal from "../../components/SecondOpinionModal";
 
@@ -21,6 +22,9 @@ export default function SecondOpinion(){
 	}
 
 return (<>
+<Head>
+	<title>Second Opinion - (2ndO)</title>
+</Head>
 <SecondOpinionModal isOpen={isOpen} setIsOpen={setIsOpen}/>
 
 <div className="container flex justify-center items-center  my-0 mx-auto border-box lg:py-20 lg:bg-transparent  lg:mx-auto ">

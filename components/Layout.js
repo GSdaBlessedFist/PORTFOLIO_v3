@@ -35,7 +35,7 @@ export default function Layout({children}){
 	}
 	
 	return (<>
-		    <div className="container mx-auto w-screen md:container md:mx-auto  top-0 bg-midtone" id="topNavBar">
+		    <div className="container  mx-auto w-screen md:container md:mx-auto  top-0 bg-midtone" id="topNavBar">
 		      <div className=" flex justify-between" id="topNavarInner">
 		      	<Link href="/">
 		      		<a className="button px-4 py-2" >

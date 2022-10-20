@@ -27,7 +27,7 @@ export default function WebDevSection({projects}){
   return(<>
     <MoreInfoModal isOpen={isOpen} setIsOpen={setIsOpen} name={name} short={short} description={description} learned={learned}/>
 
-    <section className="container mx-auto h-fit flex flex-col " id="web-development">
+    <section className="container mx-auto  h-fit flex flex-col " id="web-development">
       <table className=" table table-auto">
         <tbody>
           <tr id="webDev-title-row" className="bg-light ">
