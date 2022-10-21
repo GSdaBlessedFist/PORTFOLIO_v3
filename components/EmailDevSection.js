@@ -72,7 +72,7 @@ export default function EmailDevSection({emailDevProjects}){
 	          	                      <div className="bg-midtone grow h-full flex justify-center items-center ">{emailDevProject.techStack}</div>
 	          	                      <div id={`${emailDevProject.id}-link-section`} className="bg-primary w-1/3 h-full flex justify-center items-center ">
 	          	                      	<Link href={emailDevProject.url}>
-					                       <a id={`${emailDevProject.id}-link`} className="font-bold p-3 border border-primary text-midtone hover:border hover:border-2 hover:border-midtone" target="_blank">go to project</a>
+					                       <a id={`${emailDevProject.id}-link`} className="font-bold p-3 border border-primary text-midtone hover:border hover:border-2 hover:border-midtone" >go to project</a>
 					                    </Link>
 	          	                      </div>
 	          	                    </div>
