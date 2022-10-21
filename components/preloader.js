@@ -21,19 +21,19 @@ export default function Preloader() {
 		  .to(dotRef.current,{opacity:0,scale:1.75})
 		  .set(dotRef.current,{display:"hidden"})
 
-	},[])
+	})
 
 	return (
 			<div className="flex justify-center items-center absolute top-0 left-0 bottom-0 right-0 h-full mx-auto  BLUE w-[300px]  o">
 				<div  className="opacity-0 absolute mx-auto  b">
-					{/*<Image src={step1} width={300} height={300} />*/}
-					<img ref={dotRef} src="../assets/theProgression-icon(step-1).png" alt="" width="300" height="300"/>
+					<Image src={step1} width={300} height={300} alt="dot"/>
+					
 				</div>
 				<div ref={ringRef} className="opacity-0 absolute mx-auto b">
-					<Image src={step2} width={300} height={300} />
+					<Image src={step2} width={300} height={300} alt="ring"/>
 				</div>				
 				<div ref={finalStepRef} className="opacity-0 absolute mx-auto b">
-					<Image src={step3} width={300} height={300} />
+					<Image src={step3} width={300} height={300} alt="final step"/>
 				</div>					
 				
 			</div>

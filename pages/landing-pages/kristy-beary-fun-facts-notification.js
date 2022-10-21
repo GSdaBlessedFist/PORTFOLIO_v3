@@ -9,7 +9,7 @@ export default function KristysBearyFunFacts(){
 		</Head>
 		<div className="container h-[75vh] flex justify-center items-center  my-0 mx-auto  border-box">
 			<div className="container w-full relative  o">
-				<img src={"https://i.ibb.co/PtynfLD/kristys-beary-fun-facts-screenshot-fullsized.png"} alt=""/>
+				<Image src={"https://i.ibb.co/PtynfLD/kristys-beary-fun-facts-screenshot-fullsized.png"} width={1908} height={905} alt=""/>
 			</div>
 			
 		</div>

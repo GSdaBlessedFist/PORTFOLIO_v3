@@ -34,7 +34,7 @@ const Content = ({setIsOpen})=>{
 					<div className="text-4xl so-font-main text-right px-10 pb-10">
 						...so, this was just a demo landing page 
 						for a made-up company, but if you got this far,
-						you'll receive a demo confirmation email. 
+						you&apos;ll receive a demo confirmation email. 
 						<br/>
 						<br/><div className="w-full text-center text-blue-400">And again, thanks for clicking through.</div>
 					</div>

@@ -97,7 +97,7 @@ export default function Layout({children}){
 		    				</div>
 		    				<div className="py-2">
 		    					<label htmlFor="message" className="pr-3">Message:</label>
-		    					<textarea name="message-input" id="message-input" name="message" rows="1" className="text-primary rounded-full py-2 text-center" defaultValue=""></textarea>
+		    					<textarea id="message-input" name="message" rows="1" className="text-primary rounded-full py-2 text-center" defaultValue=""></textarea>
 		    				</div>
 		    				<div className="py-2">
 		    					<button id="contact-submit" type="submit" className="button rounded-full b p-4" onClick={formSubmission}>SEND</button>

@@ -58,7 +58,7 @@ export default function EmailDevSection({emailDevProjects}){
 	          	                  <div id={`${emailDevProject.id}-grid`} className="grid grid-cols-[200px_auto] lg:grid-cols-[400px_auto] grid-rows-[76%_auto] h-[250px] overflow-hidden my-4 border border-4 border-light shadow-xl ">
 	          	                    <div id={`${emailDevProject.id}-screenshot`} className="col-span-1 row-span-2 h-full flex items-center ">
 	          	                    	<div className="" >
-	          	                    		<img src={emailDevProject.screenShot} alt="landing page screenshot" className=""/>
+	          	                    		<Image src={emailDevProject.screenShot} alt="landing page screenshot" width={400} height={236} className=""/>
 	          	                    	</div>
 	          	                    </div>
 	          	                    <div id={`${emailDevProject.id}-info`} className=" ">

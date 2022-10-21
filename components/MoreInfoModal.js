@@ -46,7 +46,7 @@ const Content = ({setIsOpen,name,short,description,learned})=>{
 							<ul>
 								{concepts.map((concept,index)=>{
 									return (
-										<li className="text-sm text-center py-3 border-b-4 border-b-midtone/50">{concept}</li>
+										<li className="text-sm text-center py-3 border-b-4 border-b-midtone/50" key={`concept-${concept.name}`}>{concept}</li>
 									)
 								})}
 							</ul>
