@@ -1,8 +1,8 @@
 const GraphicArtInfo = [
 	{
-		id: "graphic-piece",
-		name: "graphic-piece",
-		description: "This is a placeholder",
+		id: "_",
+		name: "_",
+		description: "",
 		image: "images/movie-search-screenshot.png"
 	}
 ];	
