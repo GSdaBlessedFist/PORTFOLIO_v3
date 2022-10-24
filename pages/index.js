@@ -25,9 +25,9 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
       <Head>
           <title>JZ-Portfolio</title>
           {/*<script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
-                <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
+              <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
       </Head>
-      <div id="homepage" className="container mx-auto">
+      <div id="homepage" className="container mx-auto border-l-8 border-r-8 border-primary/75">
             <div className="absolute container -z-20 -top-1 flex justify-center items-center">
               {/*<Hero/>*/}
               {/*<Image src={hero} width="500" height="555" />*/}

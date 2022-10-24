@@ -38,6 +38,7 @@ body{
   display:flex;
   flex-direction:column;
 	/*background: #aaa;*/
+  background: black;
   color: white;
 }
 

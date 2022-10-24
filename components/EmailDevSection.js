@@ -51,7 +51,7 @@ export default function EmailDevSection({emailDevProjects}){
 	          	              )
 	          	            })}
 	          	          </tr>
-	          	          <tr id="emailDev-items-row" className=" flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around">
+	          	          <tr id="emailDev-items-row" className=" flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
 	          	            {emailDevProjects.map((emailDevProject)=>{
 	          	              return (
 	          	                <td id={`${emailDevProject.id}`} className=" w-11/12 mx-auto my-1 " key={`${emailDevProject.id}-container`}>

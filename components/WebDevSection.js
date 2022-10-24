@@ -68,7 +68,7 @@ export default function WebDevSection({projects}){
               )
             })}
           </tr>
-          <tr id="webDev-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around ">
+          <tr id="webDev-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
             {projects.map((project,index)=>{
               return (
                 <td id={`${project.id}`} className=" w-11/12 mx-auto my-1 lg:w-5/12 lg:shrink-0" key={project.id}>

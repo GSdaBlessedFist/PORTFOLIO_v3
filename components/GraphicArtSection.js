@@ -49,7 +49,7 @@ export default function GraphicArtSection({graphicArt}){
 	              )
 	            })}
 	          </tr>
-	          <tr id="graphicArt-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around">
+	          <tr id="graphicArt-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
 	            {graphicArt.map((artPiece,index)=>{
 	              return (
 	                <td id={`${artPiece.id}`} className="w-11/12 mx-auto my-1 " key={artPiece.id}>

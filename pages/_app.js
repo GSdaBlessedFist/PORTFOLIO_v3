@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import * as gtag from "../lib/gtag";
 
 function MyApp({ Component, pageProps }) {
- 
+  
   //const [loading, setLoading] = useState(false);
 
     // useEffect(()=>{
@@ -40,12 +40,21 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-8KJ3YKTN3T',{
             page_path: window.location.pathname,
           });
-        `}
-      </Script>
+        `}</Script>
 
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      {(router.pathname == "/upwork/web-development-gallery" 
+      ||router.pathname == "/upwork/email-development-gallery")?(
+        <>
+          <Component {...pageProps} />
+        </>
+      ):(
+        <>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>    
+        </>
+      )}
+      
     </>
   )
 }
