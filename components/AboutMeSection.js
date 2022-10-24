@@ -22,7 +22,7 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
                     </a>
                   </Link>
                 </div>
-              <ul id="aboutMeNavMenu" className="p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:border-b-2 sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
+              <ul id="aboutMeNavMenu" className=" p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:border-b-2 sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
                 <Link href="#web-development">
                   <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>
                 </Link>
@@ -37,7 +37,7 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
           </tr>
           <tr className="">
             <td>
-              <div id="aboutme-grid" className=" mt-2 p-6  grid grid-cols-6 gap-4 lg:py-20">
+              <div id="aboutme-grid" className="  p-6  grid grid-cols-6 gap-4 lg:py-20 border-l-8 border-r-8 border-primary/75">
                 <div id="personal-info" className="col-span-4 text-right break-words font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white to-light lg:text-2xl">{aboutMePersonal }</div>
                 <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center bg-gradient-to-r from-accent/20 to-transparent ">
                   <div className="text-2xl lg:text-3xl">Personal</div>
