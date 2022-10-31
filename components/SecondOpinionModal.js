@@ -18,7 +18,7 @@ const Content = ({setIsOpen})=>{
 	};
 	function closeModalNextProject(){
 		setIsOpen(false);
-		router.push('/')
+		router.push('/landing-pages/kristy-beary-fun-facts-notification')
 	};
 
 	return (<>
