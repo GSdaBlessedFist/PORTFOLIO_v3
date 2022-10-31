@@ -33,7 +33,7 @@ export default function WebDevSection({projects}){
           <tr id="webDev-title-row" className="bg-light ">
             <td className="pt-4 text-2xl headingFont text-white/75" >
               <span className="pl-6">web development</span><br/>
-              <span className="pl-10 relative top-[-.5rem] text-6xl ">Projects</span>
+              <span className="pl-10 relative top-[-.5rem] text-6xl opacity-60">Projects</span>
               <div className="float-right pr-10 overflow-hidden ">
                 <Link href="/">
                   <a className=" p-4 " >
