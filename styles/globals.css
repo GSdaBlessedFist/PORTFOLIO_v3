@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@400;500;600;700&family=Varela+Round&display=swap');
 
 @layer base {
   .b {
@@ -19,6 +20,20 @@
   .spacer{
     @apply w-[5px] h-[20px] bg-[#112]/50;
   }
+  .headingFont{
+    @apply font-anton;
+  }
+  .navFont{
+    @apply font-cutive font-bold;
+  }
+  .itemFont{
+    @apply font-varela text-base font-bold;    
+  }
+  
+  .contentFont{
+    @apply font-quicksand font-semibold;
+  }
+
   /*SECOND OPINION LANDING PAGE STYLES*/
   .so-font-main{
     font-family: 'Roboto Slab', serif;

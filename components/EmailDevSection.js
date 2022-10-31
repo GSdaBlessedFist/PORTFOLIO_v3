@@ -15,9 +15,9 @@ export default function EmailDevSection({emailDevProjects}){
 	      <table className="table table-auto ">
 	        <tbody>
 	          <tr id="emailDev-title-row" className="bg-light ">
-	            <td className=" pt-6 text-2xl text-white/75">
+	            <td className=" pt-6 text-2xl headingFont text-white/75">
 	              <span className="pl-6">Email Development</span><br/>
-	              <span className="pl-10 relative top-[-1rem] text-6xl ">Projects</span>
+	              <span className="pl-10 relative top-[-.5rem] text-6xl ">Projects</span>
 	              <div className="float-right pr-10 overflow-hidden ">
 	                <Link href="/">
 	                  <a className=" p-4 " >
@@ -27,21 +27,21 @@ export default function EmailDevSection({emailDevProjects}){
 	              </div>
 	              <ul id="emailDevNavMenu" className="p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
 	                <Link href="#web-development">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>
+	                  <a><li className="navFont  p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>
 	                </Link>
 	                <Link href="#graphic-art">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Graphic Art</li></a>
+	                  <a><li className="navFont  p-2 text-right hover:text-accent hover:animate-fadeIn">Graphic Art</li></a>
 	                </Link> 
 	                <Link href="#about-me">
-	                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">About me</li></a>
+	                  <a><li className="navFont  p-2 text-right hover:text-accent hover:animate-fadeIn">About me</li></a>
 	                </Link>
 	              </ul>
 	            </td>
 	          </tr>
-	          <tr id="emailDev-links-row" className="border-t-2 flex flex-wrap justify-evenly">
+	          <tr id="emailDev-links-row" className="border-t-2 flex flex-wrap justify-evenly px-4">
 	          	            {emailDevProjects.map((emailDevProject)=>{
 	          	              return (
-	          	                <td className="grow py-2 px-3 flex justify-center items-center border border-2 border-primary hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-2 hover:border-accent hover:bg-transparent" key={`${emailDevProject.id}-container`}>
+	          	                <td className="py-2 px-2 flex justify-center items-center itemFont border border-2 border-bgDark hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-2 hover:border-accent hover:bg-transparent" key={`${emailDevProject.id}-container`}>
 	          	                  <Link href={emailDevProject.url} key={`${emailDevProject.name}-link`}>
 	          	                    <a className=" h-full hover:text-accent" id={`${emailDevProject.id}-link`} key={`${emailDevProject.name}-anchor`}>
 	          	                      {emailDevProject.name}
@@ -51,6 +51,7 @@ export default function EmailDevSection({emailDevProjects}){
 	          	              )
 	          	            })}
 	          	          </tr>
+	          	          <hr className="h-1 bg-primary/25 border-0 dark:bg-gray-700"/>
 	          	          <tr id="emailDev-items-row" className=" flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
 	          	            {emailDevProjects.map((emailDevProject)=>{
 	          	              return (
@@ -61,13 +62,13 @@ export default function EmailDevSection({emailDevProjects}){
 	          	                    		<Image src={emailDevProject.screenShot} alt="landing page screenshot" width={400} height={236} className=""/>
 	          	                    	</div>
 	          	                    </div>
-	          	                    <div id={`${emailDevProject.id}-info`} className=" ">
+	          	                    <div id={`${emailDevProject.id}-info`} className="itemFont ">
 	          	                      <h1 id={`${emailDevProject.id}-title`} className="text-center py-1 font-bold bg-midtone text-accent text-2xl">{emailDevProject.name}</h1>
-	          	                      <p id={`${emailDevProject.id}-description`} className="text-sm lg:text-xl leading-4 p-4">{emailDevProject.description}</p>
+	          	                      <p id={`${emailDevProject.id}-description`} className="contentFont text-base lg:text-xl leading-4 p-4">{emailDevProject.description}</p>
 	          	                    </div>
 
 
-	          	                    <div id={`${emailDevProject.id}-techStack`} className="text-sm text-light flex items-center justify-evenly text-center lg:text-sm" >
+	          	                    <div id={`${emailDevProject.id}-techStack`} className="font-verela font-semibold text-sm text-light flex items-center justify-evenly text-center lg:text-sm" >
 	          	                      
 	          	                      <div className="bg-midtone grow h-full flex justify-center items-center ">{emailDevProject.techStack}</div>
 	          	                      <div id={`${emailDevProject.id}-link-section`} className="bg-primary w-1/3 h-full flex justify-center items-center ">

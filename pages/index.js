@@ -36,18 +36,18 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
               <table className="table table-auto border relative top-24">
                 <tbody>
                   <tr id="title-row" className="">
-                    <td className="pb-5 text-center">
-                      <div className="text-4xl text-bgLight font-bold">Jason Zamora&apos;s <span className="text-4xl">portfolio</span></div>
+                    <td className="pb-5 px-5 md:px-0 text-center">
+                      <div className="text-5xl tracking-wider text-bgLight font-anton ">Jason Zamora</div>
                     </td>
                   </tr>
                   <tr id="subTitle-row">
                     <td className="pb-5 text-center ">
-                      <p className="text-light">web | email developer </p>
+                      <p className="font-mono  text-4xl font-bold text-light tracking-tighter">web | email developer </p>
                     </td>
                   </tr>
                   <tr id="microBlog-row">
                     <td className="py-2">
-                      <p className="text-center text-light"><em>Tiny gods with tiny computers.</em></p>
+                      <p className="font-varela text-2xl tracking-tighter text-center text-light"><em>"Everything is a source of inspiration."</em></p>
                     </td>
                   </tr>
                 </tbody>

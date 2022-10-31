@@ -45,10 +45,10 @@ export default function Layout({children}){
 		      	</Link>
 		        <div className="flex " id="topNavBarMenuGroup">
 		        	<Link href="/#web-development" id="topNavBarMenu-webDevSection" className="">
-		         		<a className="button p-2 h-full flex items-center hover:animate-fadeIn ">Web Development</a>
+		         		<a className="button p-2 h-full flex items-center navFont hover:animate-fadeIn ">Web Development</a>
 		         	</Link> 	
 		         	<Link href="/#email-development" id="topNavBarMenu-emailDevSection" className="">
-		         		<a className="button p-2 h-full flex items-center hover:animate-fadeIn">Email Development</a>
+		         		<a className="button p-2 h-full flex items-center navFont hover:animate-fadeIn">Email Development</a>
 		         	 </Link>
 		        </div>
 		      </div>
@@ -60,11 +60,11 @@ export default function Layout({children}){
 		    	<div className="container relative mx-auto w-screen h-full flex flex-col bg-midtone md:container md:mx-auto md:sticky md:bottom-0 lg:sticky lg:bottom-0">
 		    		<div id="footerInner-topRow" className="flex justify-evenly items-center ">
 		    			<div className="">
-		    				<p className="text-xl"><b>Thank you for visiting my portfolio</b></p>
+		    				<p className="contentFont text-xl"><b>Thank you for visiting my portfolio</b></p>
 		    			</div>
 		    			<div className="w-1/3 flex justify-between items-center">
 		    				<Link href={"https://github.com/GSdaBlessedFist/PORTFOLIO_v3"}>
-		                        <a id="portfolio_v3Git-link" className="button font-bold border border-midtone p-[1.3rem]" target="_blank">git</a>
+		                        <a id="portfolio_v3Git-link" className="button navFont font-bold border border-midtone p-[1.3rem]" target="_blank">git</a>
 		                     </Link>
 			    			<Link href="/">
 					      		<a className="button p-4 " >
@@ -74,13 +74,13 @@ export default function Layout({children}){
 		    			</div>
 		    		</div>
 		    		<div className="flex justify-evenly items-center bg-primary overflow-hidden" id="footerInner-BottomRow">
-		    			<div>Jason Zamora</div>
+		    			<div className="font-anton text-2xl tracking-wider">Jason Zamora</div>
 		    			<div className="flex-grow-0">
-		    				<button id="contact-footer-button" className="bg-primary hover:text-accent p-4 tracking-normal animate-fadeInOut" onClick={contactOpen}>Contact Me</button>
+		    				<button id="contact-footer-button" className="bg-primary navFont hover:text-accent p-4 tracking-normal animate-fadeInOut" onClick={contactOpen}>Contact Me</button>
 		    			</div>
 		    			<div>
 		    				<ul>
-		    					<li>Austin,Tx</li>
+		    					<li className="contentFont font-bold">Austin,Tx</li>
 		    				</ul>
 		    			</div>
 		    		</div>

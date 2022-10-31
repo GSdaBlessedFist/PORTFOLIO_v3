@@ -12,9 +12,9 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
       <table className=" table table-auto">
         <tbody className="">
           <tr id="aboutMe-title-row" className="bg-light">
-            <td className=" pt-6 text-2xl text-white/75">
+            <td className=" pt-6 text-2xl headingFont text-white/75">
               <span className="pl-6">About</span><br/>
-              <span className="pl-10 relative top-[-1rem] text-6xl ">Me</span>
+              <span className="pl-10 relative top-[-.5rem] text-6xl ">Me</span>
               <div className="float-right pr-10 overflow-hidden ">
                   <Link href="/">
                     <a className=" p-4 " >
@@ -24,13 +24,13 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
                 </div>
               <ul id="aboutMeNavMenu" className=" p-2 -top-11 flex flex-col relative bg-midtone sm:border sm:border-midtone sm:float-right sm:border-b-2 sm:top-1 sm:justify-around sm:justify-self-center sm:flex-row sm:float-none">
                 <Link href="#web-development">
-                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Web Development</li></a>
+                  <a><li className="navFont p-2 text-center hover:text-accent hover:animate-fadeIn">Web Development</li></a>
                 </Link>
                 <Link href="#email-development">
-                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Email Development</li></a>
+                  <a><li className="navFont p-2 text-center hover:text-accent hover:animate-fadeIn">Email Development</li></a>
                 </Link> 
                 <Link href="#graphic-art">
-                  <a><li className="text-bold p-2 text-right hover:text-accent hover:animate-fadeIn">Graphic Art</li></a>
+                  <a><li className="navFont p-2 text-center hover:text-accent hover:animate-fadeIn">Graphic Art</li></a>
                 </Link>
               </ul>
             </td>
@@ -38,20 +38,20 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
           <tr className="">
             <td>
               <div id="aboutme-grid" className="  p-6  grid grid-cols-6 gap-4 lg:py-20 border-l-8 border-r-8 border-primary/75">
-                <div id="personal-info" className="col-span-4 text-right break-words font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white to-light lg:text-2xl">{aboutMePersonal }</div>
+                <div id="personal-info" className="col-span-4 contentFont text-right break-words font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white to-light lg:text-2xl">{aboutMePersonal }</div>
                 <div id="personal-heading" className="col-span-2 col-start-5 flex justify-center items-center bg-gradient-to-r from-accent/20 to-transparent ">
-                  <div className="text-2xl lg:text-3xl">Personal</div>
+                  <div className="headingFont text-accent text-2xl lg:text-3xl">Personal</div>
                 </div>
 
                 <div id="professional-heading" className="col-span-2 col-start-1 flex justify-center items-center bg-gradient-to-l from-accent/20 to-transparent">
-                  <div className="text-2xl lg:text-3xl">Professional</div>
+                  <div className="headingFont text-accent text-2xl lg:text-3xl">Professional</div>
                 </div>
-                <div id="professional-info" className="col-start-3 col-span-4 break-words font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-white to-light lg:text-2xl">{aboutMeProfessional}</div>
+                <div id="professional-info" className="col-start-3 col-span-4 contentFont break-words font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-white to-light lg:text-2xl">{aboutMeProfessional}</div>
             </div>
             </td>
           </tr>
           <tr className="">
-            <td id="techUsed-title" className="flex justify-center text-2xl bg-midtone py-4">Technologies used:</td>
+            <td id="techUsed-title" className="flex justify-center navFont text-accent text-2xl bg-midtone py-4">Technologies used:</td>
             <td id="techUsed-row" className="flex flex-wrap items-center justify-evenly  bg-white ">
               {aboutMeTech.map((icon)=>{
                 return (

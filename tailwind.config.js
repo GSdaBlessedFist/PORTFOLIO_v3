@@ -5,6 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily:{
+        'anton': [ 'Anton', 'sans-serif'],
+        'quicksand': ['Quicksand', 'sans-serif'],
+        'varela': ['Varela Round', 'sans-serif'],
+        'cutive':['Cutive', 'serif']
+      },
     extend:{
       colors: {
         transparent: 'transparent',
