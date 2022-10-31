@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import backToToplogo from "../assets/theProgression-icon.png";
 
+
 export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,aboutMePicture,aboutMeTech}){
 
 
