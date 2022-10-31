@@ -47,7 +47,7 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
                   </tr>
                   <tr id="microBlog-row">
                     <td className="py-2">
-                      <p className="font-varela text-2xl tracking-tighter text-center text-light"><em>&apos;Everything is a source of inspiration.&apos;</em></p>
+                      <p className="font-varela text-2xl tracking-tighter text-center text-light"><em>&apos;Everything is a source of inspiration. &apos;</em></p>
                     </td>
                   </tr>
                 </tbody>
