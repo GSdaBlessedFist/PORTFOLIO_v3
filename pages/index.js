@@ -28,30 +28,9 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
               <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
       </Head>
       <div id="homepage" className="container mx-auto border-l-8 border-r-8 border-primary/75">
-            <div className="absolute container -z-20 -top-1 flex justify-center items-center">
-              {/*<Hero/>*/}
-              {/*<Image src={hero} width="500" height="555" />*/}
-            </div>
-            <section id="landingPage" className="container px-6 mx-auto h-screen flex flex-col justify-center items-center" >
-              <table className="table table-auto border relative top-24">
-                <tbody>
-                  <tr id="title-row" className="">
-                    <td className="pb-5 px-5 md:px-0 text-center">
-                      <div className="text-5xl tracking-wider text-bgLight font-anton ">Jason Zamora</div>
-                    </td>
-                  </tr>
-                  <tr id="subTitle-row">
-                    <td className="pb-5 text-center ">
-                      <p className="font-mono  text-4xl font-bold text-light tracking-tighter">web | email developer </p>
-                    </td>
-                  </tr>
-                  <tr id="microBlog-row">
-                    <td className="py-2">
-                      <p className="font-varela text-2xl tracking-tighter text-center text-light"><em>&apos;Everything is a source of inspiration. &apos;</em></p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            
+            <section id="landingPage" className=" container px-6 mx-auto h-screen flex flex-col justify-center items-center" >
+              <Hero />
             </section>
           </div>
           
