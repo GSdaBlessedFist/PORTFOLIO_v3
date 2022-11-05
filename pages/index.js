@@ -1,19 +1,24 @@
 import Preloader from "../components/preloader";
-import {useState,useEffect,useRef} from "react";
+import {useState,useEffect,useRef, lazy} from "react";//lazy added
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
 import Hero from "../components/Hero";
-//import hero from "../assets/portfolio-bgPic-letters(TESTER).png";
 //import {microblog_entries} from "../data/microblog-entries";
 import projectPieces from "../data/projectInfo";
 import emailDevProjectPieces from "../data/emailDevProjectInfo";
 import graphicArtPieces from "../data/graphicArtInfo";
 import {AboutMePersonal,AboutMeProfessional,AboutMePicture,AboutMeTech} from "../data/aboutMeInfo";
-import WebDevSection from "../components/WebDevSection";
-import EmailDevSection from "../components/EmailDevSection";
-import GraphicArtSection from "../components/GraphicArtSection";
-import AboutMeSection from "../components/AboutMeSection";
+
+const WebDevSection = React.lazy(()=>import("../components/WebDevSection"));
+//import WebDevSection from "../components/WebDevSection";
+const EmailDevSection = React.lazy(()=>import("../components/EmailDevSection"));
+//import EmailDevSection from "../components/EmailDevSection";
+const GraphicArtSection = React.lazy(()=>import("../components/GraphicArtSection"));
+//import GraphicArtSection from "../components/GraphicArtSection";
+const AboutMeSection = React.lazy(()=>import("../components/AboutMeSection"));
+//import AboutMeSection from "../components/AboutMeSection";
 
 
 
