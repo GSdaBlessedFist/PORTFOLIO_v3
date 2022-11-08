@@ -12,6 +12,9 @@ module.exports = {
         'cutive':['Cutive', 'serif']
       },
     extend:{
+      screens:{
+        'xs': '360px'
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

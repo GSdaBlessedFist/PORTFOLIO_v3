@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@400;500;600;700&family=Varela+Round&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@400;500;600;700&family=Varela+Round&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;700&display=swap');*/
 
 @layer base {
   .b {
@@ -40,6 +41,14 @@
   }
   .so-border {
     @apply border-2 border-white;
+  }
+
+  /*DANGEROUSLY SMOOTHIE LANDING PAGE STYLES*/
+  .ds-font-main{
+    font-family: 'Abril Fatface', cursive;
+  }
+  .ds-font-minor{
+    font-family: 'Raleway', sans-serif;
   }
 }
 

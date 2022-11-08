@@ -56,7 +56,7 @@ export default function Layout({children}){
 
 		    {children}
 		    
-		    <div id="footer" className="mt-2">
+		    <div id="footer" className=" sm:fixed sm:bottom-0 sm:left-0 sm:right-0 mt-2">
 		    	<div className="container relative mx-auto w-screen h-full flex flex-col bg-midtone md:container md:mx-auto md:sticky md:bottom-0 lg:sticky lg:bottom-0">
 		    		<div id="footerInner-topRow" className="flex justify-evenly items-center ">
 		    			<div className="">
@@ -76,7 +76,7 @@ export default function Layout({children}){
 		    		<div className="flex justify-evenly items-center bg-primary overflow-hidden" id="footerInner-BottomRow">
 		    			<div className="font-anton text-2xl tracking-wider">Jason Zamora</div>
 		    			<div className="flex-grow-0">
-		    				<button id="contact-footer-button" className="bg-primary navFont hover:text-accent p-4 tracking-normal animate-fadeInOut" onClick={contactOpen}>Contact Me</button>
+		    				<button id="contact-footer-button" className="bg-primary navFont hover:text-accent p-4 tracking-normal animate-fadeInOut xs:animate-none" onClick={contactOpen}>Contact Me</button>
 		    			</div>
 		    			<div>
 		    				<ul>

@@ -45,7 +45,7 @@ return (<>
 				<div id="form-topSection" className="lg:relative lg:-top-12">
 					<div className="py-2 grid grid-cols-[auto_192px] md:grid-cols-[auto_220px] lg:grid-cols-[auto_192px]  ">
 						<div id="url-label" className="so-font-main font-bold text-right pr-4 md:pr-2" required>http:// </div>
-						<input id="url-input" className="so-font-main text-base text-[#8fbbff] text-left pl-2 bg-slate-700 placeholder:text-[#62799c] rounded-full md:w-full" type="url" name="url" placeholder="www.yourSite.com" />
+						<input id="url-input" className="so-font-main text-base text-[#8fbbff] text-center pl-2 bg-slate-700 placeholder:text-[#62799c] rounded-full md:w-full" type="url" name="url" placeholder="www.yourSite.com" />
 					</div>
 					<div className="py-2 grid grid-cols-[auto_192px] md:grid-cols-[auto_220px] lg:grid-cols-[auto_192px] ">
 						<div id="email-label" className="so-font-main font-bold text-right pr-4 md:pr-2" required>email:</div>
