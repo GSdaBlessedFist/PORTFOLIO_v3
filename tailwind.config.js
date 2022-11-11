@@ -25,7 +25,12 @@ module.exports = {
         "lightMidtone": "#A7DDD9",
         'midtone': '#368B85',
         'light': '#B4B897',
-        'accent': '#F1E9E5'
+        'accent': '#F1E9E5',
+        'dsPrimary':'#ff1800',/* ds = DangerouslySmoothie */
+        'dsDarkPrimary':'#9d2f2d',
+        'dsSecondary':'#ffa900',
+        'dsMinor':'#ffbc05',
+        'dsAccent':'#a8ff00'
       },
       animation:{
         fadeIn: "fadeIn .36s linear forwards",
