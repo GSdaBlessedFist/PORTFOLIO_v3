@@ -9,7 +9,9 @@ module.exports = {
         'anton': [ 'Anton', 'sans-serif'],
         'quicksand': ['Quicksand', 'sans-serif'],
         'varela': ['Varela Round', 'sans-serif'],
-        'cutive':['Cutive', 'serif']
+        'cutive':['Cutive', 'serif'],
+        'bangers':['Bangers', 'cursive'],
+        'yellowtail': ['Yellowtail', 'cursive']
       },
     extend:{
       screens:{
@@ -26,11 +28,10 @@ module.exports = {
         'midtone': '#368B85',
         'light': '#B4B897',
         'accent': '#F1E9E5',
-        'dsPrimary':'#ff1800',/* ds = DangerouslySmoothie */
-        'dsDarkPrimary':'#9d2f2d',
-        'dsSecondary':'#ffa900',
-        'dsMinor':'#ffbc05',
-        'dsAccent':'#a8ff00'
+        'dsPrimary':'#a75432',/* ds = DangerouslySmoothie */
+        'dsDarkPrimary':'#38100c',
+        'dsSecondary':'#c29795',
+        'dsAccent':'#f3c557'
       },
       animation:{
         fadeIn: "fadeIn .36s linear forwards",
