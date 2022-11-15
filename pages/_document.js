@@ -19,6 +19,7 @@ export default function MyDocument(){
                <Main/>
                <div id='additional-project-info-portal'/>
                <div id='secondopinion-portal'/>
+               <div id="dangerously-smooth-portal"/>
                <NextScript />
             </body>
          </Html>

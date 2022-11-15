@@ -10,6 +10,8 @@ module.exports = {
         'quicksand': ['Quicksand', 'sans-serif'],
         'varela': ['Varela Round', 'sans-serif'],
         'cutive':['Cutive', 'serif'],
+        'raleway':['Raleway', 'sans-serif'],
+        'fatface':['Abril Fatface', 'cursive'],
         'bangers':['Bangers', 'cursive'],
         'yellowtail': ['Yellowtail', 'cursive']
       },

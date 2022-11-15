@@ -45,10 +45,16 @@
 
   /*DANGEROUSLY SMOOTHIE LANDING PAGE STYLES*/
   .ds-font-main{
-    font-family: 'Abril Fatface', cursive;
+    @apply font-bangers;
   }
   .ds-font-minor{
-    font-family: 'Raleway', sans-serif;
+    @apply font-raleway;    
+  }
+  .ds-font-accent{
+    @apply font-fatface;
+  }
+  .ds-border {
+    @apply border-2 border-dsAccent;
   }
 }
 
