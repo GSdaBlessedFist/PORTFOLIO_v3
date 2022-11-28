@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   const email = req.body
   // console.log('body', email);
   const msg = {
-      to: 'GSdaBlessedFist@gmail.com',
+      to: email,
       from: 'GSdaBlessedFist@gmail.com',
       subject: 'New Message!',
       html: `<div>${email}</div>`
