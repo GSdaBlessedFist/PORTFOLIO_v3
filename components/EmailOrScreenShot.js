@@ -1,22 +1,27 @@
 import {useEffect,useState} from "react";
+import {useRouter} from "next/router";
 
-export default function EmailOrScreenShot(){
+//sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+
+export default function EmailOrScreenShot({email}){
+
+	const router = useRouter();
+
+	async function sendEmail(e){
+		// e.preventDefault();
+		
+		await fetch('/api/send-grid-mail',{
+			 method: "POST",
+			 body: email
+		})
+		
+		//router.push('/api/send-grid-mail')
 	
-	function sendEmail(e){
-		e.preventDefault();
-		console.log("Sending...")
-	// 	setIsOpen(true)
-
-	// 	emailjs.sendForm(process.env.NEXT_PUBLIC_MAILJET_SERVICE_ID, process.env.NEXT_PUBLIC_MAILJET_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
-	//       .then((result) => {
-	//           console.log(result.text);
-	//       }, (error) => {
-	//           console.log(error.text);
-	//       });
 	}
 	function showScreenShot(e){
 		e.preventDefault();
 		console.log("Showing...")
+		//display screenshot of email
 	}
 
 	return (<>

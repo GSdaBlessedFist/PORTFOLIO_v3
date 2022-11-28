@@ -11,17 +11,17 @@ const infoText = "We've gone down the list of fruits and found some great matche
 
 export default function DangerouslySmooth(){
 	const form = useRef();
-	const contactEmail = useRef();
+	//const contactEmail = useRef(); 
 	const [isOpen,setIsOpen] =useState(false);
-	const [email,setEmail]= useState("");
+	const [email,setEmail]= useState();
 
-	const presentThankyouModal = function(e){
-		
-		e.preventDefault();
-		// setEmail(contactEmail.current)
+	const updateEmail = function(e){
+		setEmail(e.target.value);
+		// console.log(email + ": Make sure to validate");
+	}
+
+	const presentThankyouModal = function(){
 		setIsOpen(true);
-		
-		console.log(contactEmail.target)
 	}
 
 	// const formSubmission = function(e){
@@ -56,7 +56,7 @@ return (<>
 			{infoText}
 		</div>
 		<div id="form" className="col-start-2 row-start-4 col-span-1 row-span-1 flex flex-col justify-start lg:justify-center items-center ">
-			<input type="text" name="contact-email" ref={contactEmail}  className="z-20 xs:w-3/5 lg:w-1/4 xs:w-2/4 mb-3 py-1 px-3 text-dsAccent ds-font-main font-bold text-lg text-center bg-dsSecondary/75 rounded-full focus:border-dsAccent"/>
+			<input type="email" name="contact-email" onChange={updateEmail} className="z-20 xs:w-3/5 lg:w-1/4 xs:w-2/4 mb-3 py-1 px-3 text-dsAccent ds-font-main font-bold text-lg text-center bg-dsSecondary/75 rounded-full focus:border-dsAccent" required={true}/>
 			<button type="submit" onClick={presentThankyouModal} className="z-20 w-1/2  p-1 bg-dsPrimary font-[bangers] text-xl tracking-wide rounded-full border-2 border-dsAccent hover:bg-dsDarkPrimary">
 				Subscribe and enjoy!<span className="after:block after:absolute inline-block after:w-[35px] after:h-[35px] after:rounded-full after:-inset-3 after:bg-dsAccent relative xs:left-8 after:sm:left-4 after:md:left-12 after:lg:left-0 after:xl:left-16 " ></span>
 			</button>

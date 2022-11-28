@@ -6,12 +6,12 @@ import EmailOrScreenShot from "./EmailOrScreenShot";
 const DangerouslySmoothModal = ({isOpen,setIsOpen,email})=>{
 	
 	return isOpen
-		? createPortal(<Content setIsOpen={setIsOpen}/>,
+		? createPortal(<Content setIsOpen={setIsOpen} email={email}/>,
 		  document.querySelector("#dangerously-smooth-portal"))
 		: null
 }
 
-const Content = ({setIsOpen})=>{
+const Content = ({setIsOpen,email})=>{
 
 	const router = useRouter();
 	function closeModal(){
@@ -36,7 +36,8 @@ const Content = ({setIsOpen})=>{
 						What I <span className="xs:text-2xl text-dsAccent">can</span> tell you is that you have a choice on whether you want to get the email or just check out the screenshot.
 					</div>
 					<div id="choices-section">
-						<EmailOrScreenShot/>
+						<EmailOrScreenShot email={email}/>
+						
 					</div>
 					<button className="xs:w-2/3 border-2 border-dsAccent/30 xs:p-1 rounded-full bg-dsPrimary/20 hover:bg-dsPrimary hover:border-dsAccent text-dsPrimary hover:text-dsAccent" onClick={closeModalNextProject}>Close and go to the next project</button>
 				</div>
