@@ -14,6 +14,7 @@ export default function MyDocument(){
                <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"/>
                <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/> 
                <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Yellowtail&display=swap" rel="stylesheet"/>
+               <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6fd5a8ccbc5a4632736360ea6/073ba4a0d4dbab8e531f2bb2e.js");</script>
             </Head>
             <body className="bg-bgDark">
                <Main/>
