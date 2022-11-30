@@ -10,12 +10,11 @@ export default async function handler(req, res) {
       to: email,
       from: {
         email: 'GSdaBlessedFist@gmail.com',
-        name: "jason"
+        name: "Jason Zamora"
       },
       templateId: "d-2de9ee6b657c4f1bba2338cc28bd67e1",
       dynamic_template_data:{
-        recipientEmail : email,
-        name: "Jogn"
+        recipientEmail : email
       }
     }
 
@@ -25,7 +24,5 @@ export default async function handler(req, res) {
     })
   }catch (error) {
     console.error(error);
-    // expected output: ReferenceError: nonExistentFunction is not defined
-    // Note - error messages will vary depending on browser
   }
 }
