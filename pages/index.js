@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
 import Hero from "../components/Hero";
+import WelcomeBanner from "../components/WelcomeBanner";
 //import {microblog_entries} from "../data/microblog-entries";
 import projectPieces from "../data/projectInfo";
 import emailDevProjectPieces from "../data/emailDevProjectInfo";
@@ -33,12 +34,13 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
               <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
       </Head>
       <div id="homepage" className="container mx-auto border-l-8 border-r-8 border-primary/75">
+         <section id="landingPage" className=" container px-6 mx-auto h-screen flex flex-col justify-center items-center" >
+            <Hero />
+            <div className="relative -top-[48px] -left-8 text-lg xl:-top-[90px] xl:-left-16 font-anton text-white xl:text-[2.5rem] z-30">Jason Zamora</div>
+            <WelcomeBanner/>
+         </section>
             
-            <section id="landingPage" className=" container px-6 mx-auto h-screen flex flex-col justify-center items-center" >
-              <Hero />
-              <div className="relative -top-[48px] -left-8 text-lg xl:-top-[90px] xl:-left-16 font-anton text-white xl:text-[2.5rem] z-30">Jason Zamora</div>
-            </section>
-          </div>
+      </div>
           
 
           <WebDevSection projects={projectPieces}/>
