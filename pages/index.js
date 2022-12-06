@@ -1,4 +1,4 @@
-import Preloader from "../components/preloader";
+//import Preloader from "../components/preloader";
 import {useState,useEffect,useRef, lazy} from "react";//lazy added
 import React from "react";
 import Head from "next/head";
@@ -33,7 +33,7 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
           {/*<script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
               <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
       </Head>
-      <div id="homepage" className="container mx-auto border-l-8 border-r-8 border-primary/75">
+      <div id="homepage" className="container mx-auto border-l-8 border-r-8 border-primary/75 ">
          <section id="landingPage" className=" container px-6 mx-auto h-screen flex flex-col justify-center items-center" >
             <Hero />
             <div className="relative -top-[48px] -left-8 text-lg xl:-top-[90px] xl:-left-16 font-anton text-white xl:text-[2.5rem] z-30">Jason Zamora</div>

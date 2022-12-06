@@ -38,7 +38,7 @@ export default function Layout({children}){
 		    <div className="container  mx-auto w-screen md:container md:mx-auto  top-0 bg-midtone" id="topNavBar">
 		      <div className=" flex justify-between" id="topNavarInner">
 		      	<Link href="/">
-		      		<a className="button px-4 py-2" >
+		      		<a className="button 2xl:ml-2 px-4 py-2" >
 		      			{/*<Image src={logo} width={112} height={30} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>*/}
 		      			<Image src={consiseLogo} width={50} height={50} alt={"site logo"}/>
 		      		</a>
@@ -48,7 +48,7 @@ export default function Layout({children}){
 		         		<a className="button p-2 h-full flex items-center navFont hover:animate-fadeIn ">Web Development</a>
 		         	</Link> 	
 		         	<Link href="/#email-development" id="topNavBarMenu-emailDevSection" className="">
-		         		<a className="button p-2 h-full flex items-center navFont hover:animate-fadeIn">Email Development</a>
+		         		<a className="2xl:mr-4 button p-2 h-full flex items-center navFont hover:animate-fadeIn">Email Development</a>
 		         	 </Link>
 		        </div>
 		      </div>
