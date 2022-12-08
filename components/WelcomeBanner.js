@@ -33,7 +33,7 @@ export default function WelcomeBanner() {
     .to(welcomeTextsRef.current,{opacity:1,stagger:.1,duration:1},"-=.5")
     .to(welcomeTextsRef.current,{fill:"#15151E",duration:1.5,delay:1.5})
     .to(welcomeTextsRef.current,{stroke:"#464660",strokeWidth:.35,duration:1},"<")
-    .to(welcomeTextsRef.current,{y:gsap.utils.random(11,150),opacity:0,duration:1,stagger:{...staggerOptions,duration:.5},delay:1.5})
+    .to(welcomeTextsRef.current,{y:10,opacity:0,duration:1,stagger:{...staggerOptions,duration:.5},delay:1.5})
   },[]);
 
   //height="90.01"

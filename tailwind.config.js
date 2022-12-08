@@ -30,10 +30,10 @@ module.exports = {
         current: 'currentColor',
         'white': '#ffffff',
         'bgLight':'#C4C4D4',
-        "bgDark":'#15151E',
+        "bgDark":'#15151E',/* rgb(21, 21, 30)*/
         'primary': '#464660',
-        "lightMidtone": "#A7DDD9",
-        'midtone': '#368B85',
+        "lightMidtone": "#A7DDD9",/*rgb(70, 70, 96)*/
+        'midtone': '#368B85',/*rgb(54,139,133)*/
         'light': '#B4B897',
         'accent': '#F1E9E5',
         'dsPrimary':'#a75432',/* ds = DangerouslySmoothie */
@@ -45,7 +45,8 @@ module.exports = {
         fadeIn: "fadeIn .36s linear forwards",
         slideInRight : "slideInRight .36s linear forwards",
         slideInUp : "slideInUp .36s linear forwards",
-        fadeInOut: "fadeInOut 2.25s ease-out 5s infinite"
+        fadeInOut: "fadeInOut 2.25s ease-out 5s infinite",
+        letters: "letters 5s linear 3s infinite"
       },
       keyframes:{
         fadeIn:{

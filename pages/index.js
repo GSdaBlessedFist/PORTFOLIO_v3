@@ -5,7 +5,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
 import Hero from "../components/Hero";
-import WelcomeBanner from "../components/WelcomeBanner";
+const WelcomeBanner = React.lazy(()=>import("../components/WelcomeBanner_3"));
+//import WelcomeBanner from "../components/WelcomeBanner_3";
 //import {microblog_entries} from "../data/microblog-entries";
 import projectPieces from "../data/projectInfo";
 import emailDevProjectPieces from "../data/emailDevProjectInfo";
@@ -30,8 +31,6 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
     return (<>
       <Head>
           <title>JZ-Portfolio</title>
-          {/*<script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
-              <script>window.LogRocket && window.LogRocket.init('wkpq3g/portfolio');</script>*/}
       </Head>
       <div id="homepage" className="container mx-auto border-l-8 border-r-8 border-primary/75 ">
          <section id="landingPage" className=" container px-6 mx-auto h-screen flex flex-col justify-center items-center" >

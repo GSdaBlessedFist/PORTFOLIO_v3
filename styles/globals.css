@@ -80,6 +80,7 @@ section,table{
   border: none;
   /*border: 4px white solid;*/
 }
+
 /* BG HERO */
 .bgHeroContainer{
   position: absolute;
@@ -108,4 +109,9 @@ section,table{
   transform-origin: center left;
   stroke: white;
   stroke-width: 4px;
+}
+
+/*Welcome Message*/
+.welcome-letter{
+  @apply origin-center;
 }
