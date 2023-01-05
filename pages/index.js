@@ -10,7 +10,7 @@ const WelcomeBanner = React.lazy(()=>import("../components/WelcomeBanner_3"));
 //import {microblog_entries} from "../data/microblog-entries";
 import projectPieces from "../data/projectInfo";
 import emailDevProjectPieces from "../data/emailDevProjectInfo";
-import graphicArtPieces from "../data/graphicArtInfo";
+//import graphicArtPieces from "../data/graphicArtInfo";
 import {AboutMePersonal,AboutMeProfessional,AboutMePicture,AboutMeTech} from "../data/aboutMeInfo";
 
 const WebDevSection = React.lazy(()=>import("../components/WebDevSection"));
@@ -44,7 +44,7 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
 
           <WebDevSection projects={projectPieces}/>
           <EmailDevSection emailDevProjects={emailDevProjects}/>
-          <GraphicArtSection graphicArt={graphicArt}/>
+          {/*<GraphicArtSection graphicArt={graphicArt}/>*/}
           <AboutMeSection 
             aboutMePersonal={AboutMePersonal}
             aboutMeProfessional={AboutMeProfessional}
@@ -61,7 +61,7 @@ export const getStaticProps = async ()=>{
     props:{
       projects: projectPieces,
       emailDevProjects: emailDevProjectPieces,
-      graphicArt: graphicArtPieces,
+      //graphicArt: graphicArtPieces,
       aboutMePersonal: JSON.stringify(AboutMePersonal),
       aboutMeProfessional:JSON.stringify(AboutMeProfessional),
       aboutMePicture:JSON.stringify(AboutMePicture),

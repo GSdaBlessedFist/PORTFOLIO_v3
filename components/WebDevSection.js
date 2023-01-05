@@ -12,6 +12,7 @@ export default function WebDevSection({projects}){
   const [description,setDescription] = useState("");
   const [learned,setLearned] = useState("");
   const [name,setName] =useState("");
+  const [isLive,setIsLive] = useState(true);
   const linkEmail = useRef();
 
   const presentAdditionalInfo = (name,short,description,learned)=>{
@@ -94,7 +95,7 @@ export default function WebDevSection({projects}){
                     </div>
                     <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly bg-midtone  lg:col-span-1 ">
                       <Link href={project.url} className="">
-                        <a id={`${project.id}-url`} className="font-bold px-4 border border-midtone hover:border hover:border-accent " target="_blank">live site</a>
+                        <a id={`${project.id}-url`} className="font-bold px-4 border border-midtone hover:border hover:border-accent " target="_blank">{project.isLive ? "Live Site" : "Screenshots"}</a>
                       </Link>
                       <div className="spacer"> </div>                                         
                       <Link href={project.git}>

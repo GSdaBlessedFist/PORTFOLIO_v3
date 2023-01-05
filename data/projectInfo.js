@@ -21,8 +21,9 @@ const projectInfo = [
 		learned: ["data-attributes","Cosmic CMS","destructuring","sending emails"],
 		techStack: "NodeJS, Express, Handlebars, SASS, Cosmic CMS, NodeMailer,and Heroku",
 		screenShot: "https://i.ibb.co/bdk07fJ/simple-cosmic-blog-screenshot.png",
-		url: "https://simple-cosmic-blog.herokuapp.com/",
-		git: "https://github.com/GSdaBlessedFist/simpleCosmicBlog"
+		url: "/archives/simple-cosmic-blog/screenshot-gallery",
+		git: "https://github.com/GSdaBlessedFist/simpleCosmicBlog",
+		isLive:false
 	},
 	{
 		id: "aftercall-excerpt",
@@ -44,7 +45,8 @@ const projectInfo = [
 		techStack: "SCSS, SVG, and GSAP ",
 		screenShot: "https://i.ibb.co/23hJ6V0/aftercall-excerpt-screenshot.png",
 		url: "https://codepen.io/GuyShifty/pen/xxYwOwK/?layout=left",
-		git: "https://codepen.io/GuyShifty/pen/xxYwOwK/?layout=left"
+		git: "https://codepen.io/GuyShifty/pen/xxYwOwK/?layout=left",
+		isLive:true
 	},
 	{
 		id: "react-movie-search",
@@ -61,7 +63,8 @@ const projectInfo = [
 		techStack: "React, SASS, TMDB Api, and Vercel",
 		screenShot: "https://i.ibb.co/BTGSKN1/movie-search-screenshot.png",
 		url: "https://tmdb-movie-search-cxueep507-gsdablessedfist.vercel.app/",
-		git: "https://github.com/GSdaBlessedFist/TMDB-Movie-Search"
+		git: "https://github.com/GSdaBlessedFist/TMDB-Movie-Search",
+		isLive:true
 	},
 	{
 		id: "bonsai-haiku",
@@ -80,7 +83,8 @@ const projectInfo = [
 		techStack: "TailWindCSS, GSAP and SVG",
 		screenShot: "https://i.ibb.co/31vGhf3/bonsai-haiku-screenshot.png",
 		url: "https://bonsai-haiku.herokuapp.com/",
-		git: "https://github.com/GSdaBlessedFist/bonsai-haiku"
+		git: "https://github.com/GSdaBlessedFist/bonsai-haiku",
+		isLive:true
 	},
 	
 	
