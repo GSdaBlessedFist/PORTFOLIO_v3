@@ -19,7 +19,7 @@ const projectInfo = [
 			</div>
 		`,
 		learned: ["data-attributes","Cosmic CMS","destructuring","sending emails"],
-		techStack: "NodeJS, Express, Handlebars, SASS, Cosmic CMS, NodeMailer,and Heroku",
+		techStack: "NodeJS, Express, Handlebars, SASS, Cosmic CMS",
 		screenShot: "https://i.ibb.co/bdk07fJ/simple-cosmic-blog-screenshot.png",
 		url: "/archives/simple-cosmic-blog/screenshot-gallery",
 		git: "https://github.com/GSdaBlessedFist/simpleCosmicBlog",

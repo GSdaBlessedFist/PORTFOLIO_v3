@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function ScreenshotGallery(){
@@ -8,7 +9,7 @@ export default function ScreenshotGallery(){
 		<Head>
 			<title>Simple Cosmic Blog : Gallery</title>
 		</Head>
-		<section id="simple-cosmic-blog-gallery" data-test="simple-cosmic-blog-gallery" className="container mx-auto h-screen flex flex-col " id="web-development">
+		<section id="simple-cosmic-blog-gallery" data-test="simple-cosmic-blog-gallery" className="container mx-auto h-screen flex flex-col " >
 			<table className=" table table-auto">
 	        <tbody>
 	          <tr id="webDev-title-row" className="bg-light ">
