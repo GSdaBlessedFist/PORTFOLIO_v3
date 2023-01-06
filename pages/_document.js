@@ -16,7 +16,8 @@ export default function MyDocument(){
                <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Yellowtail&display=swap" rel="stylesheet"/>
                
             </Head>
-            <body className="bg-bgDark">
+            {/*<body className="bg-bgDark">*/}
+            <body className="bg-gradient-to-r from-black via-midtone to-black">
                <Main/>
                <div id='additional-project-info-portal'/>
                <div id='secondopinion-portal'/>

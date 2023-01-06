@@ -11,7 +11,7 @@ export default function EmailDevSection({emailDevProjects}){
 		const x = emailDevProjects[0].scrWidth;
 		console.log(x)
 	  return (<>
-	    <section className="container  mx-auto h-fit  flex flex-col " id="email-development">
+	    <section className="container  mx-auto h-fit  flex flex-col bg-bgDark" id="email-development">
 	      <table className="table table-auto ">
 	        <tbody>
 	          <tr id="emailDev-title-row" className="bg-light ">

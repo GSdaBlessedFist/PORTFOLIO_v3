@@ -32,9 +32,10 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
       <Head>
           <title>JZ-Portfolio</title>
       </Head>
-      <div id="homepage" className="container mx-auto border-l-8 border-r-8 border-primary/75 ">
-         <section id="landingPage" className=" container px-6 mx-auto h-screen flex flex-col justify-center items-center" >
-            <Hero />
+
+      <div id="homepage" className="container w-screen mx-auto border-l-8 border-r-8 border-primary/75 ">
+         <section id="landingPage" className=" container px-6 mx-auto h-screen bg-bgDark flex flex-col justify-center items-center" >
+            {/*<Hero />*/}
             <div className="relative -top-[48px] -left-8 text-lg xl:-top-[90px] xl:-left-16 font-anton text-white xl:text-[2.5rem] z-30">Jason Zamora</div>
             <WelcomeBanner/>
          </section>

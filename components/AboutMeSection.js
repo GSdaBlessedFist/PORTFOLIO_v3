@@ -9,7 +9,7 @@ export default function AboutMeSection({aboutMePersonal,aboutMeProfessional,abou
 
 
   return (<>
-    <section className="container mx-auto h-full flex flex-col " id="about-me">
+    <section className="container mx-auto h-full flex flex-col bg-bgDark" id="about-me">
       <table className=" table table-auto">
         <tbody className="">
           <tr id="aboutMe-title-row" className="bg-light">

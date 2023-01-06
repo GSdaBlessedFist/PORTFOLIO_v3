@@ -58,29 +58,31 @@ export default function Layout({children}){
 		    
 		    <div id="footer" className="sm:bottom-0 sm:left-0 sm:right-0 mt-2">
 		    	<div className="container relative mx-auto w-screen h-full flex flex-col bg-midtone md:container md:mx-auto md:sticky md:bottom-0 lg:sticky lg:bottom-0">
-		    		<div id="footerInner-topRow" className="flex justify-evenly items-center ">
-		    			<div className="">
-		    				<p className="contentFont xs:px-10 xs:text-base text-xl"><b>Thank you for visiting my portfolio</b></p>
+		    		{/*<div id="footerInner-topRow" className="flex justify-evenly items-center ">*/}
+		    		<div id="footerInner-topRow" className="w-full grid grid-cols-3 ">
+		    			<div className=" col-start-1 col-span-2 flex sm:justify-start items-center ">
+		    				<div className="contentFont text-xl xs:px-8 xs:text-base "><b>Thanks for visiting.</b></div>
 		    			</div>
-		    			<div className="w-1/3 flex justify-between items-center">
+		    			<div className=" w-full grid grid-cols-2 gap-0">
 		    				<Link href={"https://github.com/GSdaBlessedFist/PORTFOLIO_v3"}>
-		                        <a id="portfolio_v3Git-link" className="button navFont font-bold border border-midtone p-[1.3rem]" target="_blank">git</a>
+		                        <a id="portfolio_v3Git-link" className="flex justify-end sm:relative sm:left-4  xs:before:col-start-1 xs:before:col-span-2  navFont font-bold border border-midtone p-[1.3rem]" target="_blank">git</a>
 		                     </Link>
-			    			<Link href="/">
-					      		<a className="button p-4 " >
-					      			<Image src={logo} width={112} height={30} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>
+			    			<Link href="/" >
+					      		{/*<a className="button p-4  xs:before:col-start-2 xs:before:col-span-1 xs:visible xs:before:visible xs:before:absolute xs:before:top-9 xs:before:w-0 xs:before:h-0 xs:before:border-l-4 xs:before:border-l-transparent xs:before:border-r-4 xs:before:border-r-transparent xs:before:border-b-8 xs:before:border-white" >*/}
+					      		<a className="flex justify-center  p-4 xs:text-center xs:before:col-start-2 xs:before:col-span-1 xs:before:absolute xs:before:top-7 xs:before:w-0 xs:before:h-0 xs:before:border-l-4 xs:before:border-l-transparent xs:before:border-r-4 xs:before:border-r-transparent xs:before:border-b-8 xs:before:border-white" >
+					      			{/*<Image  src={logo} width={112} height={30} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>*/}
 					      		</a>
 					      	</Link>
 		    			</div>
 		    		</div>
-		    		<div className="flex justify-evenly items-center bg-primary " id="footerInner-BottomRow">
-		    			<div className="font-anton xs:text-base text-2xl tracking-wider">Jason Zamora</div>
+		    		<div id="footerInner-BottomRow" className="flex justify-between sm:px-8 xs:px-4 xs:py-2 items-center bg-primary " >
+		    			<div className="font-anton relative sm:left-4 xs:text-base text-2xl tracking-wider">Jason Zamora</div>
 		    			<div className="flex-grow-0">
 		    				<button id="contact-footer-button" className=" relative top-0.5 navFont hover:text-accent xs:p-0 p-4 tracking-normal animate-fadeInOut xs:animate-none" onClick={contactOpen}>Contact Me</button>
 		    			</div>
 		    			<div>
 		    				<ul>
-		    					<li className="contentFont relative top-0.5 font-bold">Austin,Tx</li>
+		    					<li className="contentFont relative 2xl:right-24 xl:right-16 lg:right-12 md:right-8 sm:right-4 top-0.5 font-bold">Austin,Tx</li>
 		    				</ul>
 		    			</div>
 		    		</div>

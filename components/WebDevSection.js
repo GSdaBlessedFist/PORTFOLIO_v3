@@ -28,8 +28,8 @@ export default function WebDevSection({projects}){
   return(<>
     <MoreInfoModal isOpen={isOpen} setIsOpen={setIsOpen} name={name} short={short} description={description} learned={learned}/>
 
-    <section className="container mx-auto  h-fit flex flex-col " id="web-development">
-      <table className=" table table-auto">
+    <section className=" container mx-auto  h-fit flex flex-col bg-bgDark" id="web-development">
+      <table className="table table-auto">
         <tbody>
           <tr id="webDev-title-row" className="bg-light ">
             <td className="pt-4 text-2xl headingFont text-white/75" >
@@ -55,7 +55,7 @@ export default function WebDevSection({projects}){
               </ul>
             </td>           
           </tr>
-          <tr id="webDev-links-row" className="border-t-2 col-span-2 flex flex-wrap justify-evenly px-4">
+          <tr id="webDev-links-row" className="bg-bgDark border-t-2 col-span-2 flex flex-wrap justify-evenly px-4">
             {projects.map((project,index)=>{
               return (
                 <td className=" py-2 px-2 flex justify-center itemFont items-center border border-2 border-bgDark hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-2 hover:border-accent hover:bg-transparent" key={project.id}>
@@ -73,27 +73,43 @@ export default function WebDevSection({projects}){
           <tr id="webDev-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
             {projects.map((project,index)=>{
               return (
-                <td id={`${project.id}`} className=" w-11/12 mx-auto my-1 lg:w-5/12 lg:shrink-0" key={project.id}>
-                  <div id={`${project.id}-grid`} className="grid grid-cols-[50%_50%] grid-rows-[1fr_17%_12%] h-[250px] border border-4 border-light my-4 lg:h-[450px] lg:grid-rows-[50%_150px_auto]">
+                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 lg:w-5/12 lg:shrink-0 xs:BLUE " key={project.id}>
+
+                  <div id={`${project.id}-grid`} className="grid grid-cols-[50%_50%] grid-rows-[1fr_17%_12%] h-[250px] border border-4 border-light my-4 xs:my-0 lg:h-[450px] lg:grid-rows-[50%_150px_auto]">
+                    
+
+                    {/*--------------------*/}
+                    {/*--------------------*/}
+
                     <div id={`${project.id}-screenshot`} className="col-span-1 row-span-2 m-auto p-.5 lg:col-span-2 lg:row-span-1 ">
                       <Image src={project.screenShot} width={375} height={230} alt={"a screenshot"}/>
                     </div>
-                    <div id={`${project.id}-info`} className="p-0 pt-3 overflow-hidden lg:col-span-2 ">
-                      <div className="h-full bg-primary">
-                        <h1 id={`${project.id}-title`} className="text-center py-2 bg-midtone itemFont font-bold text-accent text-2xl lg:pt-5">{project.name}</h1>
-                        <p id={`${project.id}-short`} className="contentFont text-base  leading-4 p-2  lg:text-[1rem] lg:leading-5 lg:p-4 " >{project.short}</p>
 
-                      </div>      
-                      <div className="h-auto float-right relative bottom-9 right-2">
-                        <button className="bg-light rounded-full w-7 h-7 hover:bg-midtone" onClick={()=>presentAdditionalInfo(project.name,project.short,project.description,project.learned)}>+</button>
-                      </div>                                                        
+                    <div id={`${project.id}-info`} className="p-0 pt-3 xs:pt-0 overflow-hidden lg:col-span-2 sm:col-start-2 sm:col-span-1 ">
+                        
+                        <div className="h-full bg-primary ">
+                          <h1 id={`${project.id}-title`} className="text-center py-2 bg-midtone itemFont font-bold text-accent text-2xl lg:pt-5 xs:text-base">{project.name}</h1>
+                          <p id={`${project.id}-short`} className="contentFont text-base  leading-4 p-2  lg:text-[1rem] lg:leading-5 lg:p-4 xs:text-sm" >{project.short}</p>
+                        </div>      
+
+
+                        <div className="h-auto float-right relative bottom-9 right-2 ">
+                          <button className="bg-light rounded-full w-7 h-7 hover:bg-midtone" onClick={()=>presentAdditionalInfo(project.name,project.short,project.description,project.learned)}>+</button>
+                        </div>                                                        
                       
                       
                     </div>
-                    <div id={`${project.id}-techStack`} className="font-verela font-semibold text-sm text-light flex items-center justify-center  border-lightMidtone p-2 text-center lg:text-xs ">
+
+                    {/*--------------------*/}
+                    {/*--------------------*/}
+
+
+                    <div id={`${project.id}-techStack`} className="font-verela font-semibold text-sm text-light flex relative items-center justify-center  border-lightMidtone p-2 xs:p-4 xs:-top-12 text-center lg:text-xs xs:col-start-1 xs:col-span-2 xs:BLUE">
                       {project.techStack}
                     </div>
-                    <div id={`${project.id}-external-links-group`} className="col-span-2 row-start-3 flex items-center justify-evenly bg-midtone  lg:col-span-1 ">
+
+
+                    <div id={`${project.id}-external-links-group`} className="col-span-2 flex items-center justify-evenly bg-midtone  lg:col-span-1 ">
                       <Link href={project.url} className="">
                         <a id={`${project.id}-url`} className="font-bold px-4 border border-midtone hover:border hover:border-accent " target="_blank">{project.isLive ? "Live Site" : "Screenshots"}</a>
                       </Link>
