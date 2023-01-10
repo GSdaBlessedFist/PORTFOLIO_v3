@@ -58,7 +58,7 @@ export default function WebDevSection({projects}){
           <tr id="webDev-links-row" className="bg-bgDark border-t-2 col-span-2 flex flex-wrap justify-evenly px-4">
             {projects.map((project,index)=>{
               return (
-                <td className=" py-2 px-2 flex justify-center itemFont items-center border border-2 border-bgDark hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-2 hover:border-accent hover:bg-transparent" key={project.id}>
+                <td className=" py-2 px-2 flex justify-center itemFont items-center border border-2 border-bgDark hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-1 hover:border-accent hover:bg-transparent" key={project.id}>
                    <Link href={`#${project.id}`} key={`${project.name}-link`}> 
 
                     <a className="h-full " id={`${project.id}-link`} key={`${project.name}-anchor`}>
@@ -70,14 +70,14 @@ export default function WebDevSection({projects}){
             })}
           </tr>
           <hr className="h-1 bg-primary/25 border-0 dark:bg-gray-700"/>
-          <tr id="webDev-items-row" className="flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
+          <tr id="webDev-items-row" className="flex flex-col py-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
             {projects.map((project,index)=>{
               return (
-                <td id={`${project.id}`} className="w-11/12 mx-auto my-1 lg:w-5/12 lg:shrink-0  " key={project.id}>
+                <td id={`${project.id}`} className="w-11/12 h-full mx-auto my-1 lg:w-5/12 lg:shrink-0 " key={project.id}>
 
                     {/*--------------------*/}
                     {/*--------------------*/}
-                  <div id={`${project.id}-grid`} className="grid lg:grid-rows-[auto_150px_60px] lg:h-[450px] grid-cols-[50%_50%] grid-rows-[1fr_17%_12%]   border border-4 border-light my-4 xs:my-0 ">
+                  <div id={`${project.id}-grid`} className="grid lg:grid-rows-[auto_150px_75px] h-full grid-cols-[50%_50%] grid-rows-[1fr_17%_15%]   border border-4 border-light my-4 xs:my-0 ">
                     
 
 

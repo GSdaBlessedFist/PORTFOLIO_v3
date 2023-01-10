@@ -48,7 +48,7 @@ export default function Layout({children}){
 		         		<a className="button p-2 h-full flex items-center navFont hover:animate-fadeIn ">Web Development</a>
 		         	</Link> 	
 		         	<Link href="/#email-development" id="topNavBarMenu-emailDevSection" className="">
-		         		<a className="2xl:mr-4 button p-2 h-full flex items-center navFont hover:animate-fadeIn">Email Development</a>
+		         		<a className="mr-4 button p-2 h-full flex items-center navFont hover:animate-fadeIn">Email Development</a>
 		         	 </Link>
 		        </div>
 		      </div>

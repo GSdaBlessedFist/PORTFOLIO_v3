@@ -41,7 +41,7 @@ export default function EmailDevSection({emailDevProjects}){
 	          <tr id="emailDev-links-row" className="border-t-2 flex flex-wrap justify-evenly px-4">
 	          	            {emailDevProjects.map((emailDevProject)=>{
 	          	              return (
-	          	                <td className="py-2 px-2 flex justify-center items-center itemFont border border-2 border-bgDark hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-2 hover:border-accent hover:bg-transparent" key={`${emailDevProject.id}-container`}>
+	          	                <td className="py-2 px-2 flex justify-center items-center itemFont border border-2 border-bgDark hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-1 hover:border-accent hover:bg-transparent" key={`${emailDevProject.id}-container`}>
 	          	                  <Link href={emailDevProject.url} key={`${emailDevProject.name}-link`}>
 	          	                    <a className=" h-full hover:text-accent" id={`${emailDevProject.id}-link`} key={`${emailDevProject.name}-anchor`}>
 	          	                      {emailDevProject.name}
