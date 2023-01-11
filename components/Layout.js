@@ -35,8 +35,8 @@ export default function Layout({children}){
 	}
 	
 	return (<>
-		    <div className="container  mx-auto w-screen md:container md:mx-auto  top-0 bg-midtone" id="topNavBar">
-		      <div className=" flex justify-between" id="topNavarInner">
+		    <div id="topNavBar" className="container mx-auto w-screen md:mx-auto  top-0 bg-midtone" >
+		      <div id="topNavarInner" className=" flex justify-between">
 		      	<Link href="/">
 		      		<a className="button 2xl:ml-2 px-4 py-2" >
 		      			{/*<Image src={logo} width={112} height={30} alt={"site logo...a glyph showing a dot(representing the solid body),an open circle(representing the mind still restricted by a physical brain), and then an open circle with an arrow pointing up to show ascension"}/>*/}
@@ -56,9 +56,9 @@ export default function Layout({children}){
 
 		    {children}
 		    
-		    <div id="footer" className="sm:bottom-0 sm:left-0 sm:right-0 mt-2">
+		    {/*<div id="footer" className="sm:bottom-0 sm:left-0 sm:right-0 mt-2">*/}
+		    <div id="footer" className=" bottom-0 sm:left-0 sm:right-0 mt-2">
 		    	<div className="container relative mx-auto w-screen h-full flex flex-col bg-midtone md:container md:mx-auto md:sticky md:bottom-0 lg:sticky lg:bottom-0">
-		    		{/*<div id="footerInner-topRow" className="flex justify-evenly items-center ">*/}
 		    		<div id="footerInner-topRow" className="w-full grid grid-cols-3 ">
 		    			<div className=" col-start-1 col-span-2 flex sm:justify-start items-center ">
 		    				<div className="contentFont text-xl xs:px-8 xs:text-base "><b>Thanks for visiting.</b></div>
