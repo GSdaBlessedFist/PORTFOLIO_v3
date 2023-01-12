@@ -26,9 +26,9 @@ export default function WelcomeBanner() {
 
     return (
     <>
-      <div className="absolute 2xl:w-1/4 2xl:h-[100px] 2xl:top-[690px] 2xl:left-[978px]">
+      <div className="absolute 2xl:w-1/4 2xl:h-[100px] 2xl:top-[660px] xl:top-[665px] lg:top-[620px] md:top-[570px] sm:top-[525px] 2xl:left-[775px] xl:left-[650px] lg:left-[510px] md:left-[360px] sm:left-[280px]">
         <div id="welcomeBannerContainer" className="container">
-          <div id="welcomeText" className="flex font-anton 2xl:text-5xl text-midtone">
+          <div id="welcomeText" className="flex font-anton xl:text-5xl lg:text-[42px] md:text-4xl sm:text-3xl text-midtone">
             <div id="character-1" ref={addToWelcomeTextRefsArray} className="welcome-letter ">W</div>
             <div id="character-2" ref={addToWelcomeTextRefsArray} className="welcome-letter ">e</div>
             <div id="character-3" ref={addToWelcomeTextRefsArray} className="welcome-letter ">l</div>

@@ -3,7 +3,7 @@ const projectInfo = [
 	{
 		id: "simple-cosmic-blog",
 		name: "simple-cosmic-blog",
-		short: "This project was simply about testing out the Cosmic CMS.",
+		short: "This project was about trying out the Cosmic CMS.  [--pending host migration]",
 		description: `
 			<div style="word-break: break-word;font-size:1.35rem;">
 				<span style="font-size:1.5rem;">On the backend</span>,this sample blog site was put together in <span style="color:#B4B897"><b>Node/ExpressJS</b></span> using <span style="color:#B4B897"><b>HandlebarsJS</b></span> for <b>templating</b> . Several lorem ipsum variants populate the <span style="color:#B4B897"><b>Cosmic CMS</b></span> for testing.  The Cosmic CMS is capable of GraphQL data fetching but for a project this small in scale, I decided to stick with the standard <b>REST fetch</b>.  
