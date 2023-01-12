@@ -17,8 +17,8 @@ export default function Hero(){
   },[])
 
 	return (<>
-    <div id="bgHeroContainer" className="bgHeroContainer overflow-hidden xl:top-[25%] lg:top-[30%] md:top-[35%] top-[40%]  xl:w-[1200px] lg:w-[1000px] md:w-[750px] sm:w-5/6 mx-auto">
-      <svg id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402.8 158.9">
+    <div id="bgHeroContainer" className="bgHeroContainer bg-bgDark overflow-hidden xl:h-[600px] md:h-[450px] h-[350px] 2xl:top-[25%] xl:top-[15%] lg:top-[25%] top-[300px] sm:top-[250px]  xl:w-[1200px] lg:w-[1000px] md:w-[700px] sm:w-5/6 mx-auto">
+      <svg id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402.8 158.9" className="2xl:scale-90 lg:scale-100 sm:scale-125 2xl:translate-x-0 lg:-translate-x-16 sm:-translate-x-24">
         
         <g id="background-wave" ref={bgwave} style={{fillOpacity:1}} transform="translate(.4 -84.63)">
         <path id="path8885" d="M-88.63 98.98c-36.47-.6-89.87 41.72-134.87 51.92-84.3 19.3-156.4 16.4-156.4 16.4v76.4h782.4v-76.4s-16 1.8-38.1-14.5c-18.8-13.8-43-45-60.6-48.3-36.3-6.79-93.8 38-141.8 48.9-69.85 16-131.26 15.2-150.28 14.4-6.053-.7-17.46-3.6-32.1-14.4-18.8-13.8-43.6-50.4-61.2-53.72-2.27-.4-4.62-.6-7.05-.7z" className="fill-lightMidtone"/>
@@ -36,6 +36,8 @@ export default function Hero(){
         </g>
       </svg>
 
+      <div id="hero-name" className=" inline relative 2xl:-top-[300px] xl:-top-[275px] lg:-top-[235px] md:-top-[145px] sm:-top-[125px] 2xl:left-[370px] xl:left-[345px] lg:left-[273px] md:left-[200px] sm:left-[135px] -left-8 font-anton text-white 2xl:text-[2.35rem] xl:text-[2.65rem] lg:text-4xl md:text-[1.90rem] text-xl sm:text-[1.4rem] z-30 select-none">Jason Zamora</div>
+      <div id="hero-welcome-message" className=" inline relative 2xl:-top-[75px] lg:-top-[25px] md:top-[45px] sm:top-[70px] xl:left-[330px] lg:left-[235px] md:left-[150px] sm:-left-12 font-anton tracking-normal 2xl:text-[2.75rem] lg:text-[2.5rem] sm:text-[2.35rem] text-midtone select-none">Welcome to my portfolio</div>
   </div>
     
 	</>)

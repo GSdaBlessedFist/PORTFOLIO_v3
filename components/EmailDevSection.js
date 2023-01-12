@@ -38,7 +38,7 @@ export default function EmailDevSection({emailDevProjects}){
 	              </ul>
 	            </td>
 	          </tr>
-	          <tr id="emailDev-links-row" className="border-t-2 flex flex-wrap justify-evenly px-4">
+	          <tr id="emailDev-links-row" className="border-t-2 flex flex-wrap justify-evenly px-4 ">
 	          	            {emailDevProjects.map((emailDevProject)=>{
 	          	              return (
 	          	                <td className="py-2 px-2 flex justify-center items-center itemFont border border-2 border-bgDark hover:bg-gradient-to-t from-accent/10 hover:text-accent hover:border hover:border-1 hover:border-accent hover:bg-transparent" key={`${emailDevProject.id}-container`}>
@@ -55,9 +55,9 @@ export default function EmailDevSection({emailDevProjects}){
 	          	          <tr id="emailDev-items-row" className=" flex flex-col pt-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
 	          	            {emailDevProjects.map((emailDevProject)=>{
 	          	              return (
-	          	                <td id={`${emailDevProject.id}`} className=" w-11/12 mx-auto my-1 " key={`${emailDevProject.id}-container`}>
+	          	                <td id={`${emailDevProject.id}`} className="w-11/12 mx-auto my-1 " key={`${emailDevProject.id}-container`}>
 	          	                  <div id={`${emailDevProject.id}-grid`} className="grid grid-cols-[200px_auto] lg:grid-cols-[400px_auto] grid-rows-[76%_auto] h-[250px] overflow-hidden my-4 border border-4 border-light shadow-xl ">
-	          	                    <div id={`${emailDevProject.id}-screenshot`} className="col-span-1 row-span-2 h-full flex items-center ">
+	          	                    <div id={`${emailDevProject.id}-screenshot`} className="col-span-1 row-span-2 h-full flex items-center border border-light border-r-4 ">
 	          	                    	<div className="" >
 	          	                    		<Image src={emailDevProject.screenShot} alt="landing page screenshot" width={400} height={236} className=""/>
 	          	                    	</div>

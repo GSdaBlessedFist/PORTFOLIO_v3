@@ -5,8 +5,6 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
 import Hero from "../components/Hero";
-const WelcomeBanner = React.lazy(()=>import("../components/WelcomeBanner_3"));
-//import WelcomeBanner from "../components/WelcomeBanner_3";
 //import {microblog_entries} from "../data/microblog-entries";
 import projectPieces from "../data/projectInfo";
 import emailDevProjectPieces from "../data/emailDevProjectInfo";
@@ -36,8 +34,6 @@ export default function Home({projects,emailDevProjects,graphicArt,aboutMePerson
       <div id="homepage" className="container w-screen mx-auto border-l-8 border-r-8 border-primary/75 ">
          <section id="landingPage" className=" container px-6 mx-auto h-screen bg-bgDark flex flex-col justify-center items-center" >
             <Hero />
-            <div className="relative 2xl:-top-[55px] xl:-top-[60px] lg:-top-[55px] md:-top-[55px] sm:-top-[55px] 2xl:-left-[70px] xl:-left-[73px] lg:-left-[60px] md:-left-[45px] -left-8 font-anton text-white xl:text-[2.5rem] lg:text-4xl md:text-2xl text-xl z-30">Jason Zamora</div>
-            <WelcomeBanner/>
          </section>
             
       </div>

@@ -27,15 +27,15 @@ return (<>
 </Head>
 <SecondOpinionModal isOpen={isOpen} setIsOpen={setIsOpen}/>
 
-<div className="container flex justify-center items-center  my-0 mx-auto border-box lg:py-20 lg:bg-transparent  lg:mx-auto ">
-	<div className="grid grid-rows-[225px_120px_1fr_1fr] bg-[#070709ff] so-border lg:bg-[#070709ff] lg:grid-cols-[348px_400px_340px] lg:grid-rows-4  lg:h-[644px] ">
+<div className=" container  flex justify-center items-start  mx-auto border-box lg:py-10 lg:bg-transparent  lg:mx-auto lg:border-l-8 lg:border-r-8 lg:border-primary/75">
+	<div className=" grid grid-rows-[225px_120px_1fr_1fr] bg-[#070709ff] so-border lg:bg-[#070709ff] lg:grid-cols-[348px_400px_340px] lg:grid-rows-4  lg:h-[644px] xl:scale-110 md:scale-90">
 		<div id="logo-row" className="grid grid-col-1 grid-rows-[99.9%_.1%] border-r-2 overflow-hidden lg:grid-rows-[.1%_99.9%] lg:row-span-4 " >
 			<Image src="https://i.ibb.co/6BwBRXj/the-second-opinion-grp-logo-simple.png" className="row-start-1 row-span-1 object-contain scale-90 lg:hidden lg:opacity-0" width={175} height={115} alt={"a screenshot"}/>
 			<Image src="https://i.ibb.co/Z8k5gR7/second-opinion-lunar.png" className="row-start-2 row-span-1 opacity-0 lg:row-start-1 lg:row-span-1 lg:object-contain lg:inline lg:opacity-100" width={348} height={644} alt="lunar curvature" />
 		</div>
 		<div id="header-row" className="container flex justify-center items-center " >
 			<div id="headerText-container" className="container w-1/2 md:w-3/4 lg:w-full" >
-				<div id="header-text" className="text-3xl so-font-main  text-center font-bold lg:relative lg:top-4">
+				<div id="header-text" className="text-3xl so-font-main lg:pr-4 text-center font-bold lg:relative lg:top-4">
 					Not sure if <span className="text-[#8fbbff]">your</span> design is working?
 				</div>
 			</div>

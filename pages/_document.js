@@ -17,7 +17,7 @@ export default function MyDocument(){
                
             </Head>
             {/*<body className="bg-bgDark">*/}
-            <body className="bg-gradient-to-r from-black via-midtone to-black">
+            <body className="h-min bg-gradient-to-r from-black via-midtone to-black">
                <Main/>
                <div id='additional-project-info-portal'/>
                <div id='secondopinion-portal'/>

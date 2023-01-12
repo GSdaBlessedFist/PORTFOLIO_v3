@@ -73,7 +73,7 @@ export default function WebDevSection({projects}){
           <tr id="webDev-items-row" className="flex flex-col py-4 lg:flex-row lg:gap-2 lg:flex-wrap lg:space-around border-l-8 border-r-8 border-primary/75">
             {projects.map((project,index)=>{
               return (
-                <td id={`${project.id}`} className="w-11/12 h-full mx-auto my-1 lg:w-5/12 lg:shrink-0 " key={project.id}>
+                <td id={`${project.id}`} className=" w-11/12 lg:h-[475px] md:h-[350px] sm:h-[300px] mx-auto my-4 lg:w-5/12 lg:shrink-0 " key={project.id}>
 
                     {/*--------------------*/}
                     {/*--------------------*/}
@@ -88,7 +88,7 @@ export default function WebDevSection({projects}){
                     <div id={`${project.id}-info`} className="p-0 pt-3 xs:pt-0 overflow-hidden lg:col-span-2 sm:col-start-2 sm:col-span-1 ">
                         
                         <div className="h-full bg-primary ">
-                          <h1 id={`${project.id}-title`} className="text-center py-2 bg-midtone itemFont font-bold text-accent text-2xl lg:pt-5 xs:text-base">{project.name}</h1>
+                          <h1 id={`${project.id}-title`} className="text-center py-2 bg-midtone itemFont font-bold text-accent text-3xl lg:pt-5 xs:text-base">{project.name}</h1>
                           <div id={`${project.id}-short`} className="contentFont leading-4 p-2 lg:leading-5 lg:p-4 text-base" >{project.short}</div>
                         </div>      
 
@@ -103,7 +103,7 @@ export default function WebDevSection({projects}){
 
 
                     {/*<div id={`${project.id}-techStack`} className=" font-varela font-semibold md:text-sm md:text-light flex relative items-center justify-center  border-lightMidtone p-2 text-center xs:text-bgDark lg:text-xs ">*/}
-                    <div id={`${project.id}-techStack`} className="flex relative items-center justify-center border-lightMidtone p-2 font-varela font-semibold sm:text-[1rem]  text-light text-center leading-4 ">
+                    <div id={`${project.id}-techStack`} className="lg:col-span-1 col-span-2 flex relative items-center justify-center border-lightMidtone p-2 font-varela font-semibold sm:text-[1rem]  text-light text-center leading-4 border-t-2 border-t-light">
                       {project.techStack}
                     </div>
 
