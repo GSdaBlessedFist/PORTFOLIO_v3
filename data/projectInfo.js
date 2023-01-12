@@ -1,31 +1,6 @@
 
 const projectInfo = [
 	{
-		id: "simple-cosmic-blog",
-		name: "simple-cosmic-blog",
-		short: "This project was about trying out the Cosmic CMS.  [--pending host migration]",
-		description: `
-			<div style="word-break: break-word;font-size:1.35rem;">
-				<span style="font-size:1.5rem;">On the backend</span>,this sample blog site was put together in <span style="color:#B4B897"><b>Node/ExpressJS</b></span> using <span style="color:#B4B897"><b>HandlebarsJS</b></span> for <b>templating</b> . Several lorem ipsum variants populate the <span style="color:#B4B897"><b>Cosmic CMS</b></span> for testing.  The Cosmic CMS is capable of GraphQL data fetching but for a project this small in scale, I decided to stick with the standard <b>REST fetch</b>.  
-			</div><br/>
-			<div style="word-break: break-word;font-size:1.35rem;">
-				On the frontend, the styling was done using <span style="color:#B4B897"><b>SASS</b></span>. At this time, I had not yet been introduced to TailwindCSS (although is based on SASS). I wanted to experiment with a more column based layout on this one so employed the 'technically' button to open a hidden section with info on the site itself.  The sliding effects were achieved using a touch of GSAP. Towards the center there are tabs for projects, info about me, and a contact page.<span style="color:#B4B897"><em> Note: This project was my last created with a desktop first approach.</em></span>
-			</div></br>
-			<div style="word-break: break-word;font-size:1.35rem;">
-				Back on the server side, the Contact email feature was configured using <span style="font-size:1.5rem;color:#B4B897"><b>Nodemailer</b></span> with <span style="font-size:1.5rem;color:#B4B897"><b>OAuth2</span> authentication</b>. I used this solution because there would only be 2 emails created.  One is sent to me while the other is a 'Thank you confirmation'.
-			</div><br/>
-			<div style="word-break: break-word;font-size:1.35rem;">
-				<b>A big take away from this project was a data transfer technique I tried out.</b> I wanted to test how data-attributes could be used on hidden HTML elements to store info (instead of having to add js).  Through the usage of serveral data-attributes, objects passed from Cosmic CMS were destructured and created '<em>silent but deadly divs</em>'.  While this technique works, it greatly affects load time, especially on looped items.  
-			</div>
-		`,
-		learned: ["data-attributes","Cosmic CMS","destructuring","sending emails"],
-		techStack: "NodeJS, Express, Handlebars, SASS, Cosmic CMS",
-		screenShot: "https://i.ibb.co/bdk07fJ/simple-cosmic-blog-screenshot.png",
-		url: "/archives/simple-cosmic-blog/screenshot-gallery",
-		git: "https://github.com/GSdaBlessedFist/simpleCosmicBlog",
-		isLive:false
-	},
-	{
 		id: "aftercall-excerpt",
 		name: "Aftercall-excerpt",
 		short: "The goal was to create an interactive storyline using the GreenSock library.",
@@ -65,6 +40,31 @@ const projectInfo = [
 		url: "https://tmdb-movie-search-cxueep507-gsdablessedfist.vercel.app/",
 		git: "https://github.com/GSdaBlessedFist/TMDB-Movie-Search",
 		isLive:true
+	},
+	{
+		id: "simple-cosmic-blog",
+		name: "simple-cosmic-blog",
+		short: "This project was about trying out the Cosmic CMS.  [--pending host migration]",
+		description: `
+			<div style="word-break: break-word;font-size:1.35rem;">
+				<span style="font-size:1.5rem;">On the backend</span>,this sample blog site was put together in <span style="color:#B4B897"><b>Node/ExpressJS</b></span> using <span style="color:#B4B897"><b>HandlebarsJS</b></span> for <b>templating</b> . Several lorem ipsum variants populate the <span style="color:#B4B897"><b>Cosmic CMS</b></span> for testing.  The Cosmic CMS is capable of GraphQL data fetching but for a project this small in scale, I decided to stick with the standard <b>REST fetch</b>.  
+			</div><br/>
+			<div style="word-break: break-word;font-size:1.35rem;">
+				On the frontend, the styling was done using <span style="color:#B4B897"><b>SASS</b></span>. At this time, I had not yet been introduced to TailwindCSS (although is based on SASS). I wanted to experiment with a more column based layout on this one so employed the 'technically' button to open a hidden section with info on the site itself.  The sliding effects were achieved using a touch of GSAP. Towards the center there are tabs for projects, info about me, and a contact page.<span style="color:#B4B897"><em> Note: This project was my last created with a desktop first approach.</em></span>
+			</div></br>
+			<div style="word-break: break-word;font-size:1.35rem;">
+				Back on the server side, the Contact email feature was configured using <span style="font-size:1.5rem;color:#B4B897"><b>Nodemailer</b></span> with <span style="font-size:1.5rem;color:#B4B897"><b>OAuth2</span> authentication</b>. I used this solution because there would only be 2 emails created.  One is sent to me while the other is a 'Thank you confirmation'.
+			</div><br/>
+			<div style="word-break: break-word;font-size:1.35rem;">
+				<b>A big take away from this project was a data transfer technique I tried out.</b> I wanted to test how data-attributes could be used on hidden HTML elements to store info (instead of having to add js).  Through the usage of serveral data-attributes, objects passed from Cosmic CMS were destructured and created '<em>silent but deadly divs</em>'.  While this technique works, it greatly affects load time, especially on looped items.  
+			</div>
+		`,
+		learned: ["data-attributes","Cosmic CMS","destructuring","sending emails"],
+		techStack: "NodeJS, Express, Handlebars, SASS, Cosmic CMS",
+		screenShot: "https://i.ibb.co/bdk07fJ/simple-cosmic-blog-screenshot.png",
+		url: "/archives/simple-cosmic-blog/screenshot-gallery",
+		git: "https://github.com/GSdaBlessedFist/simpleCosmicBlog",
+		isLive:false
 	},
 	{
 		id: "bonsai-haiku",

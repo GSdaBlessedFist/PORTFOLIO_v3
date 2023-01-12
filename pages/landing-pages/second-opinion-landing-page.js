@@ -27,7 +27,7 @@ return (<>
 </Head>
 <SecondOpinionModal isOpen={isOpen} setIsOpen={setIsOpen}/>
 
-<div className=" container  flex justify-center items-start  mx-auto border-box lg:py-10 lg:bg-transparent  lg:mx-auto lg:border-l-8 lg:border-r-8 lg:border-primary/75">
+<div className=" container h-screen flex justify-center items-start  mx-auto border-box lg:py-10 lg:bg-transparent  lg:mx-auto lg:border-l-8 lg:border-r-8 lg:border-primary/75">
 	<div className=" grid grid-rows-[225px_120px_1fr_1fr] bg-[#070709ff] so-border lg:bg-[#070709ff] lg:grid-cols-[348px_400px_340px] lg:grid-rows-4  lg:h-[644px] xl:scale-110 md:scale-90">
 		<div id="logo-row" className="grid grid-col-1 grid-rows-[99.9%_.1%] border-r-2 overflow-hidden lg:grid-rows-[.1%_99.9%] lg:row-span-4 " >
 			<Image src="https://i.ibb.co/6BwBRXj/the-second-opinion-grp-logo-simple.png" className="row-start-1 row-span-1 object-contain scale-90 lg:hidden lg:opacity-0" width={175} height={115} alt={"a screenshot"}/>

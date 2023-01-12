@@ -64,7 +64,7 @@ export default function EmailDevSection({emailDevProjects}){
 	          	                    </div>
 	          	                    <div id={`${emailDevProject.id}-info`} className="itemFont ">
 	          	                      <h1 id={`${emailDevProject.id}-title`} className="text-center py-1 font-bold bg-midtone text-accent text-2xl">{emailDevProject.name}</h1>
-	          	                      <p id={`${emailDevProject.id}-description`} className="contentFont text-base lg:text-xl leading-4 p-4">{emailDevProject.description}</p>
+	          	                      <p id={`${emailDevProject.id}-description`} className="contentFont text-base lg:text-xl lg:leading-[1em] md:leading-[1.25em] leading-4 p-4">{emailDevProject.description}</p>
 	          	                    </div>
 
 
