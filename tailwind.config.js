@@ -29,13 +29,13 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'white': '#ffffff',
-        'bgLight':'#C4C4D4',
+        'bgLight':'#147fff'/*'#C4C4D4'   <-----*/,
         "bgDark":'#15151E',/* rgb(21, 21, 30)*/
         'primary': '#464660',
         "lightMidtone": "#A7DDD9",/*rgb(70, 70, 96)*/
         'midtone': '#368B85',/*rgb(54,139,133)*/
         'light': '#B4B897',
-        'accent': '#F1E9E5',
+        'accent': '#fffd13'/*'#F1E9E5'*/,
         'dsPrimary':'#a75432',/* ds = DangerouslySmoothie */
         'dsDarkPrimary':'#38100c',
         'dsSecondary':'#c29795',

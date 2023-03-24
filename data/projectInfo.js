@@ -1,6 +1,31 @@
 
 const projectInfo = [
 	{
+		id: "suitcase-sec",
+		name: "Suitcase-Sec",
+		short: "This app was meant to serve as a general overview of the authentication process using a custom PIN component",
+		description: `
+			<div style="word-break: break-word;font-size:1.35rem;">
+				<span style="font-size:1.35rem;">An app to showcase and explain a customized PIN component inspired by a suitcase lock. And while, the component currently has only 4 individual scroll elements, more can easily be added.  Also, other values can substitute numerals.
+			</div><br/>
+			<div style="word-break: break-word;font-size:1.35rem;">
+				The approach I wanted was in making the demo, itself, a guide to user authentication.  With the checklist updating as the visitor enters both email and PIN, they can also view the checks in the background.  Towards the top a checklist reflects the steps in authentication (broadview) while the bottom has a bit more information to teach. 
+			</div><br/>
+			<div style="word-break: break-word;font-size:1.35rem;">
+				The "about the site" page explains the concept, features, and challenges.
+			</div><br/>
+			<div style="word-break: break-word;font-size:1.35rem;">
+				In creating this project, I learned about what I thought I knew regarding custom user authentication.  I intend on bettering this more meta approach for demonstrating other concepts.  I am a fan of tutorials but maybe something different.
+			</div>
+		`,
+		learned: ["user authentication process","Bcrypt library","overall API usage with Mongodb"],
+		techStack: "Next.js, MongoDb/Mongoose, SVG, Inkscape ",
+		screenShot: "https://i.ibb.co/KWLq5ZR/suitcase-sec-screenshot.png",
+		url: "https://suitcase-sec.site",
+		git: "https://github.com/GSdaBlessedFist/Suitcase-Sec",
+		isLive:true
+	},
+	{
 		id: "aftercall-excerpt",
 		name: "Aftercall-excerpt",
 		short: "The goal was to create an interactive storyline using the GreenSock library.",
